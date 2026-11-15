@@ -79,7 +79,10 @@ jobs:
           sudo udevadm trigger --name-match=kvm
       - run: flutter pub get
       - name: Android 6.0 (API 23) emulator tests
-        timeout-minutes: 30
+        # The emulator sometimes hangs on shutdown AFTER the tests finished;
+        # the verdict comes from the report in the next step instead.
+        timeout-minutes: 25
+        continue-on-error: true
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 23
@@ -92,6 +95,16 @@ jobs:
       - name: Report
         if: always()
         run: cat build/emulator-report.txt || true
+      - name: Verdict (install, launch, integration tests)
+        if: always()
+        run: |
+          R=build/emulator-report.txt
+          test -f $R || { echo "no report"; exit 1; }
+          fail=0
+          for k in INSTALL=PASS LAUNCH_FOREGROUND=PASS LAUNCH_CRASH=NO INTEGRATION_EXIT=0; do
+            grep -q "^$k$" $R && echo "ok   $k" || { echo "FAIL $k"; fail=1; }
+          done
+          exit $fail
       - uses: actions/upload-artifact@v4
         if: always()
         with:

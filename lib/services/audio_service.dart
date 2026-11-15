@@ -23,7 +23,13 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
   })  : _resolver = resolver,
         _connectivity = connectivity,
         _prefs = preferences,
-        _player = player ?? AudioPlayer(userAgent: AppConstants.userAgent) {
+        _player = player ??
+            AudioPlayer(
+              userAgent: AppConstants.userAgent,
+              // ExoPlayer sends headers itself; the Dart proxy would use a
+              // plain HttpClient and add a needless local hop.
+              useProxyForRequestHeaders: false,
+            ) {
     _init();
   }
 

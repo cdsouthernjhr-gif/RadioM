@@ -27,6 +27,9 @@ class HttpClientFactory {
       }
     }
     _context = ctx;
+    // Every HttpClient created without an explicit context (plugins included)
+    // gets the same trust store. Validation stays on.
+    HttpOverrides.global = _TrustOverrides(ctx);
   }
 
   static http.Client create({Duration connectTimeout = const Duration(seconds: 15)}) {
@@ -36,4 +39,12 @@ class HttpClientFactory {
     // NOTE: badCertificateCallback is intentionally NOT set. TLS validation is never disabled.
     return IOClient(io);
   }
+}
+
+class _TrustOverrides extends HttpOverrides {
+  _TrustOverrides(this._ctx);
+  final SecurityContext _ctx;
+
+  @override
+  HttpClient createHttpClient(SecurityContext? context) => super.createHttpClient(context ?? _ctx);
 }
