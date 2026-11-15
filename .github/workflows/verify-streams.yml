@@ -1,0 +1,24 @@
+name: verify-streams
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 3 * * 1'   # weekly, Monday 03:17 UTC
+  push:
+    branches: ['ccr-*']
+    paths: ['tool/stations_source.py', 'tool/verify_streams.py', '.github/workflows/verify-streams.yml']
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: python3 tool/verify_streams.py
+      - run: python3 tool/build_db.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: stream-verification
+          path: |
+            data/verification_results.json
+            docs/stream-verification.md
+            data/malaysia_radio.json

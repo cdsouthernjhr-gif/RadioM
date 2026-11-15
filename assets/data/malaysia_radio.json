@@ -1,0 +1,2075 @@
+{
+  "schema_version": 1,
+  "version": 1,
+  "last_updated": "2026-11-15T00:33:27Z",
+  "verification_checked_at": null,
+  "source": "https://github.com/cdsouthernjhr-gif/RadioM",
+  "stations": [
+    {
+      "id": "star-988",
+      "name": "988 FM",
+      "category": "commercial",
+      "network": "Star Media",
+      "languages": [
+        "zh"
+      ],
+      "website": "https://www.988.com.my/",
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "98.8"
+        }
+      ],
+      "logo": "https://www.988.com.my/wp-content/themes/988_web/assets/988-logo.png",
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/988_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://28103.live.streamtheworld.com/988_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "afo-chinese",
+      "name": "AFO Radio (Cina)",
+      "category": "commercial",
+      "network": "AFO Radio",
+      "languages": [
+        "zh"
+      ],
+      "website": "https://aforadio.my/",
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/7x3gv2y4bshvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "afo-english",
+      "name": "AFO Radio (English)",
+      "category": "commercial",
+      "network": "AFO Radio",
+      "languages": [
+        "en"
+      ],
+      "website": "https://aforadio.my/",
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/8150ezy4bshvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-ai-fm",
+      "name": "Ai FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": null,
+      "languages": [
+        "zh"
+      ],
+      "website": "https://aifm.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "89.3"
+        }
+      ],
+      "featured": false,
+      "tags": [
+        "nasional"
+      ],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AI_FMAAC_SC",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AI_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "net-amboi-fm",
+      "name": "Amboi FM",
+      "category": "internet",
+      "network": "Amboi FM",
+      "languages": [
+        "ms"
+      ],
+      "website": "http://amboifm.blogspot.com/",
+      "streams": [
+        {
+          "url": "http://amboifm.iradio.work:8000/listen.pls",
+          "format": "pls",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-asyik-fm",
+      "name": "Asyik FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": null,
+      "languages": [
+        "ms",
+        "orang-asli"
+      ],
+      "website": "https://asyikfm.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [
+        "nasional"
+      ],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ASYIK_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "bfm-899",
+      "name": "BFM 89.9",
+      "category": "commercial",
+      "network": "BFM Media",
+      "languages": [
+        "en"
+      ],
+      "state": "Selangor",
+      "website": "https://www.bfm.my/",
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "89.9"
+        }
+      ],
+      "featured": true,
+      "streams": [
+        {
+          "url": "https://22253.live.streamtheworld.com/BFM_SC",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BFM_SC",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "logo": null,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-bintulu-fm",
+      "name": "Bintulu FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Sarawak",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BINTULU_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "cats-fm",
+      "name": "Cats FM",
+      "category": "commercial",
+      "network": "Cats Radio",
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "state": "Sarawak",
+      "website": "https://www.catsfm.my/",
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/51qe53rv0y3vv.m4a",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "net-ceritera-fm",
+      "name": "Ceritera FM",
+      "category": "internet",
+      "network": "Ceritera FM",
+      "languages": [
+        "ms"
+      ],
+      "website": "http://ceriterafm.my/",
+      "streams": [
+        {
+          "url": "http://live.ceriterafm.my:8000/",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "cityplus-fm",
+      "name": "CITYPlus FM",
+      "category": "commercial",
+      "network": "CITYPlus",
+      "languages": [
+        "zh"
+      ],
+      "website": "https://cityplusfm.my/",
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/9ykdmcawe1bwv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "mpa-eight-fm",
+      "name": "Eight FM",
+      "category": "commercial",
+      "network": "Media Prima Audio",
+      "languages": [
+        "zh"
+      ],
+      "website": "https://www.eight.audio/",
+      "logo": "https://assets-mpa.eight.audio/media/Logo/logo-eight-wu-xian-1000x1000-09.jpg",
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/qp0xrd9mtd3vv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "astro-era",
+      "name": "ERA",
+      "category": "commercial",
+      "network": "Astro Radio",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://syok.my/",
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "103.3"
+        }
+      ],
+      "featured": true,
+      "streams": [],
+      "state": null,
+      "logo": null,
+      "tags": [],
+      "stream_type": "web_player",
+      "status_note": "Hanya pemain web rasmi tersedia."
+    },
+    {
+      "id": "mpa-fly-fm",
+      "name": "Fly FM",
+      "category": "commercial",
+      "network": "Media Prima Audio",
+      "languages": [
+        "en"
+      ],
+      "website": "https://www.flyfm.audio/",
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "95.8"
+        }
+      ],
+      "logo": "https://assets-mpa.flyfm.audio/media/Logo/profile_photo_1000x1000-04.jpg",
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/q17aka9mtd3vv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "astro-gegar",
+      "name": "GEGAR",
+      "category": "commercial",
+      "network": "Astro Radio",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://syok.my/",
+      "streams": [],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "web_player",
+      "status_note": "Hanya pemain web rasmi tersedia."
+    },
+    {
+      "id": "net-gemersik-fm",
+      "name": "Gemersik FM",
+      "category": "internet",
+      "network": "Gemersik FM",
+      "languages": [
+        "ms"
+      ],
+      "website": "http://gemersikfm.iradio.work/",
+      "streams": [
+        {
+          "url": "http://gemersikfm.iradio.work:8000/;",
+          "format": "mp3",
+          "bitrate": 128,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "astro-goxuan",
+      "name": "goXuan",
+      "category": "commercial",
+      "network": "Astro Radio",
+      "languages": [
+        "zh"
+      ],
+      "website": "https://goxuan.syok.my/",
+      "logo": "https://media2.fishtank.my/app_themes/goxuan/assets/images/landscape_goxuan.png",
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/xt9nhzsbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RAKITAAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "astro-hitz",
+      "name": "HITZ",
+      "category": "commercial",
+      "network": "Astro Radio",
+      "languages": [
+        "en"
+      ],
+      "website": "https://hitz.com.my/",
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "92.9"
+        }
+      ],
+      "featured": true,
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/488kt4sbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "mpa-hot-fm",
+      "name": "Hot FM",
+      "category": "commercial",
+      "network": "Media Prima Audio",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://www.hotfm.audio/",
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "97.6"
+        }
+      ],
+      "featured": true,
+      "logo": "https://assets-mpa.hotfm.audio/media/Logo/profile_photo_1000x1000-01_v2.jpg",
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/drakdf8mtd3vv/hls.m3u8",
+          "format": "hls",
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://stream.rcs.revma.com/drakdf8mtd3vv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "ikim-fm",
+      "name": "IKIMfm",
+      "category": "commercial",
+      "network": "IKIM",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://ikimhub.my/",
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "91.5"
+        }
+      ],
+      "logo": "https://ikimhub.my/frontend/favicon.png",
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/kz3pdu9wz2nwv/hls.m3u8",
+          "format": "hls",
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://stream.rcs.revma.com/kz3pdu9wz2nwv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-johor-fm",
+      "name": "Johor FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Johor",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/JOHOR_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/JOHOR_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "net-kcfm",
+      "name": "KCFM Radio",
+      "category": "internet",
+      "network": "KCFM",
+      "languages": [
+        "ms"
+      ],
+      "state": "Kuala Lumpur",
+      "website": "http://www.kcfm.org/",
+      "streams": [
+        {
+          "url": "http://www.kcfm.org:8000/stream",
+          "format": "mp3",
+          "bitrate": 128,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-kedah-fm",
+      "name": "Kedah FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Kedah",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KEDAH_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KEDAH_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-kelantan-fm",
+      "name": "Kelantan FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Kelantan",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://kelantanfm.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KELANTAN_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KELANTAN_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-keningau-fm",
+      "name": "Keningau FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Sabah",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://keningaufm.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KENINGAU_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-kl-fm",
+      "name": "KL FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Kuala Lumpur",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "97.2"
+        }
+      ],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KL_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KL_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "mpa-kool-fm",
+      "name": "Kool FM",
+      "category": "commercial",
+      "network": "Media Prima Audio",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://www.koolfm.audio/",
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/3930238mtd3vv/hls.m3u8",
+          "format": "hls",
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://stream.rcs.revma.com/3930238mtd3vv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-labuan-fm",
+      "name": "Labuan FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Labuan",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LABUAN_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LABUAN_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-langkawi-fm",
+      "name": "Langkawi FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Kedah",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://langkawifm.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LANGKAWI_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "astro-lite",
+      "name": "LITE",
+      "category": "commercial",
+      "network": "Astro Radio",
+      "languages": [
+        "en"
+      ],
+      "website": "https://lite.syok.my/",
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "105.7"
+        }
+      ],
+      "logo": "https://media2.fishtank.my/stations/lite/2025/lite_square_updated.png",
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/bn4ex8sbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "net-ltfm",
+      "name": "LTFM Radio",
+      "category": "internet",
+      "network": "LTFM",
+      "languages": [
+        "ms"
+      ],
+      "state": "Kuala Lumpur",
+      "website": "http://ltfmonline.com/",
+      "streams": [
+        {
+          "url": "http://live.ltfmonline.com:8000/stream",
+          "format": "mp3",
+          "bitrate": 128,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-melaka-fm",
+      "name": "Melaka FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Melaka",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MELAKA_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MELAKA_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "astro-melody",
+      "name": "Melody",
+      "category": "commercial",
+      "network": "Astro Radio",
+      "languages": [
+        "zh"
+      ],
+      "website": "https://melody.my/",
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "97.7"
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/2u1n6dtbv4uvv/hls.m3u8",
+          "format": "hls",
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://stream.rcs.revma.com/2u1n6dtbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-minnal-fm",
+      "name": "Minnal FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": null,
+      "languages": [
+        "ta"
+      ],
+      "website": "https://minnalfm.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "96.3"
+        }
+      ],
+      "featured": false,
+      "tags": [
+        "nasional"
+      ],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MINNAL_FMAAC_SC",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MINNAL_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-miri-fm",
+      "name": "Miri FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Sarawak",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MIRI_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "astro-mix",
+      "name": "MIX",
+      "category": "commercial",
+      "network": "Astro Radio",
+      "languages": [
+        "en"
+      ],
+      "website": "https://mix.my/",
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "94.5"
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/v5pq3htbv4uvv/hls.m3u8",
+          "format": "hls",
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://stream.rcs.revma.com/v5pq3htbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-mutiara-fm",
+      "name": "Mutiara FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Pulau Pinang",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MUTIARA_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MUTIARA_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "astro-my",
+      "name": "MY",
+      "category": "commercial",
+      "network": "Astro Radio",
+      "languages": [
+        "zh"
+      ],
+      "website": "https://my.com.my/",
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "101.8"
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/hc3unrtbv4uvv/hls.m3u8",
+          "format": "hls",
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://stream.rcs.revma.com/hc3unrtbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-nasional-fm",
+      "name": "Nasional FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": null,
+      "languages": [
+        "ms"
+      ],
+      "website": "https://nasionalfm.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "88.5"
+        }
+      ],
+      "featured": true,
+      "tags": [
+        "nasional"
+      ],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NASIONAL_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NASIONAL_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "net-nasyid-fm",
+      "name": "Nasyid FM",
+      "category": "internet",
+      "network": "Nasyid FM",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://www.nasyidfm.com/",
+      "tags": [
+        "nasyid"
+      ],
+      "streams": [
+        {
+          "url": "http://stereo.nasyidfm.com:8000/",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-negeri-fm",
+      "name": "Negeri FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Negeri Sembilan",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NEGERI_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NEGERI_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-pahang-fm",
+      "name": "Pahang FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Pahang",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PAHANG_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PAHANG_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-perak-fm",
+      "name": "Perak FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Perak",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PERAK_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PERAK_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-perlis-fm",
+      "name": "Perlis FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Perlis",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PERLIS_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PERLIS_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "astro-raaga",
+      "name": "RAAGA",
+      "category": "commercial",
+      "network": "Astro Radio",
+      "languages": [
+        "ta"
+      ],
+      "website": "https://raaga.syok.my/",
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "99.3"
+        }
+      ],
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/1ut6qwtbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-radio-klasik",
+      "name": "Radio Klasik",
+      "category": "rtm",
+      "network": "RTM",
+      "state": null,
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radioklasik.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "87.6"
+        }
+      ],
+      "featured": true,
+      "tags": [
+        "nasional",
+        "klasik"
+      ],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_KLASIK.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_KLASIKAAC_SC",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "net-radio-kpkt",
+      "name": "Radio KPKT",
+      "category": "internet",
+      "network": "KPKT",
+      "languages": [
+        "ms"
+      ],
+      "website": "http://radio.kpkt.gov.my/",
+      "streams": [
+        {
+          "url": "http://listen.kpkt.gov.my:8000/stream",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "net-radio-rosak",
+      "name": "Radio Rosak",
+      "category": "internet",
+      "network": "Radio Rosak",
+      "languages": [
+        "ms"
+      ],
+      "website": "http://radiorosak.com/",
+      "streams": [
+        {
+          "url": "https://radiorosak.radioca.st/stream",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-red-fm",
+      "name": "RED FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Sarawak",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "website": "https://radio.rtm.gov.my/station/red-fm",
+      "logo": "https://radio.rtm.gov.my/storage/stations/1777447046-gemini-generated-image-chd08qchd08qchd0.png",
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RED_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "net-rentak-pelangi",
+      "name": "Rentak Pelangi Muzik FM",
+      "category": "internet",
+      "network": "Rentak Pelangi",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://www.rentakpelangifm.com/",
+      "streams": [
+        {
+          "url": "http://stream.tujuh.my/proxy/rpmfm/stream",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-sabah-fm",
+      "name": "Sabah FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Sabah",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://sabahfm.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SABAH_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SABAH_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-sabah-vfm",
+      "name": "Sabah vFM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Sabah",
+      "languages": [
+        "ms",
+        "kadazandusun"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SABAH_VFM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SABAH_VFMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-sandakan-fm",
+      "name": "Sandakan FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Sabah",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SANDAKAN_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-sarawak-fm",
+      "name": "Sarawak FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Sarawak",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SARAWAK_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SARAWAK_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-selangor-fm",
+      "name": "Selangor FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Selangor",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "100.9"
+        }
+      ],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SELANGOR_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SELANGOR_FMAAC.aac",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-sibu-fm",
+      "name": "Sibu FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Sarawak",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SIBU_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "astro-sinar",
+      "name": "Sinar",
+      "category": "commercial",
+      "network": "Astro Radio",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://audio1.syok.my/sinar",
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "96.7"
+        }
+      ],
+      "featured": true,
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/azatk0tbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "net-stay-fm",
+      "name": "Stay.FM",
+      "category": "internet",
+      "network": "Stay.FM",
+      "languages": [
+        "en"
+      ],
+      "website": "https://stayfm.com/",
+      "streams": [
+        {
+          "url": "https://stayfm.com:8443/archive",
+          "format": "mp3",
+          "bitrate": 192,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-tawau-fm",
+      "name": "Tawau FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Sabah",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TAWAU_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-terengganu-fm",
+      "name": "Terengganu FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Terengganu",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://terengganufm.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TERENGGANU_FMAAC_SC",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TERENGGANU_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-traxx-fm",
+      "name": "TraXX FM",
+      "category": "rtm",
+      "network": "RTM",
+      "state": null,
+      "languages": [
+        "en"
+      ],
+      "website": "https://traxxfm.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [
+        {
+          "area": "Lembah Klang",
+          "mhz": "90.3"
+        }
+      ],
+      "featured": false,
+      "tags": [
+        "nasional"
+      ],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TRAXX_FMAAC_SC",
+          "format": "aac",
+          "bitrate": 64,
+          "verification": {
+            "status": "untested"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TRAXX_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-wai-fm-bidayuh",
+      "name": "WAI FM Bidayuh",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Sarawak",
+      "languages": [
+        "bidayuh"
+      ],
+      "website": "https://waifmbidayuh.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WAI_FM_BK.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "rtm-wai-fm-iban",
+      "name": "WAI FM Iban",
+      "category": "rtm",
+      "network": "RTM",
+      "state": "Sarawak",
+      "languages": [
+        "iban"
+      ],
+      "website": "https://radio.rtm.gov.my/",
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "streams": [
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WAI_FM_IBAN.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "net-wheelerz",
+      "name": "Wheelerz Net Radio",
+      "category": "internet",
+      "network": "Wheelerz",
+      "languages": [
+        "ms"
+      ],
+      "website": "http://www.wheelerzradio.net/",
+      "streams": [
+        {
+          "url": "http://167.114.131.90:5448/stream/",
+          "format": "mp3",
+          "bitrate": 320,
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    },
+    {
+      "id": "astro-zayan",
+      "name": "Zayan",
+      "category": "commercial",
+      "network": "Astro Radio",
+      "languages": [
+        "ms"
+      ],
+      "website": "https://zayan.syok.my/",
+      "streams": [
+        {
+          "url": "https://stream.rcs.revma.com/7ww2a4tbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
+        }
+      ],
+      "state": null,
+      "logo": null,
+      "frequencies": [],
+      "featured": false,
+      "tags": [],
+      "stream_type": "unverified",
+      "status_note": "Strim belum disahkan."
+    }
+  ]
+}
