@@ -127,7 +127,11 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
           ));
           final source =
               resolved.kind == StreamKind.hls ? HlsAudioSource(resolved.uri) : ProgressiveAudioSource(resolved.uri);
-          await _player.setAudioSource(source, preload: true).timeout(const Duration(seconds: 20));
+          final load = _player.setAudioSource(source, preload: true);
+          // If the load is abandoned (timeout / superseded), its late error
+          // must not surface as an unhandled async exception.
+          unawaited(load.then((_) {}, onError: (Object _) {}));
+          await load.timeout(const Duration(seconds: 20));
           if (session != _session) return;
           _streamIndex = idx;
           _prefs?.setPreferredStream(station.id, streams[idx].url);

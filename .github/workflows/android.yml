@@ -79,13 +79,14 @@ jobs:
           sudo udevadm trigger --name-match=kvm
       - run: flutter pub get
       - name: Android 6.0 (API 23) emulator tests
+        timeout-minutes: 30
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 23
           arch: x86_64
           target: google_apis
           force-avd-creation: false
-          emulator-options: -no-window -gpu swiftshader_indirect -no-boot-anim -camera-back none
+          emulator-options: -no-snapshot-save -no-window -gpu swiftshader_indirect -no-boot-anim -camera-back none
           disable-animations: true
           script: bash tool/ci_emulator.sh build/apk/malaysia-radio-player-universal.apk
       - name: Report

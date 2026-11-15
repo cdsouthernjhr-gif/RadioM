@@ -120,8 +120,14 @@ class StreamResolver {
       ..headers['User-Agent'] = AppConstants.userAgent
       ..headers['Icy-MetaData'] = '0';
     http.StreamedResponse? res;
+    final pending = _client.send(req);
     try {
-      res = await _client.send(req).timeout(AppConstants.httpTimeout);
+      res = await pending.timeout(AppConstants.httpTimeout, onTimeout: () {
+        // If the request completes after the timeout, close its (endless) body
+        // so a live stream does not keep downloading in the background.
+        pending.then(_discard, onError: (Object _) {});
+        throw TimeoutException('Pelayan strim tidak menjawab', AppConstants.httpTimeout);
+      });
       final kind = classifyContentType(res.headers['content-type']);
       if (res.statusCode >= 400) throw NotAudioException('Pelayan strim HTTP ${res.statusCode}');
       switch (kind) {
@@ -139,7 +145,11 @@ class StreamResolver {
       }
     } finally {
       // Cancel the body download; only headers were needed.
-      unawaited(res?.stream.listen((_) {}).cancel());
+      if (res != null) _discard(res);
     }
+  }
+
+  static void _discard(http.StreamedResponse r) {
+    unawaited(r.stream.listen(null, onError: (Object _) {}, cancelOnError: true).cancel().catchError((Object _) {}));
   }
 }
