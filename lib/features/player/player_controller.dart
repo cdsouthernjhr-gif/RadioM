@@ -44,6 +44,12 @@ class PlayerController extends ChangeNotifier {
 
   set autoReconnect(bool v) => playback.autoReconnect = v;
 
+  /// True when [station] is the one loaded in the player (playing, paused,
+  /// buffering, reconnecting …), i.e. a second press should open the player.
+  /// A station in error is restarted instead (that is what a retry press means).
+  bool isCurrent(RadioStation station) =>
+      _snapshot.station?.id == station.id && isActive && _snapshot.status != PlayerStatus.error;
+
   Future<PlayRequestResult> play(RadioStation station) async {
     if (!station.canPlayInApp) {
       return await openWebPlayer(station) ? PlayRequestResult.openedWebPlayer : PlayRequestResult.failed;
@@ -67,11 +73,28 @@ class PlayerController extends ChangeNotifier {
 
   Future<void> stop() => playback.stop();
 
+  static const volumeStep = 0.1;
+  bool _muted = false;
+  bool get muted => _muted;
+
+  /// Sets the app volume (0–1). Changing the volume while muted unmutes.
   Future<void> setVolume(double v) async {
-    _volume = v.clamp(0.0, 1.0);
+    _volume = double.parse(v.clamp(0.0, 1.0).toStringAsFixed(2));
+    if (_muted && _volume > 0) _muted = false;
     notifyListeners();
-    await playback.setVolume(_volume);
+    await playback.setVolume(_muted ? 0 : _volume);
     await storage.setVolume(_volume);
+  }
+
+  Future<void> volumeUp() => setVolume(_volume + volumeStep);
+  Future<void> volumeDown() => setVolume(_volume - volumeStep);
+
+  /// Mute keeps the chosen volume and restores it on unmute.
+  Future<void> toggleMute() async {
+    _muted = !_muted;
+    if (!_muted && _volume == 0) _volume = 0.5;
+    notifyListeners();
+    await playback.setVolume(_muted ? 0 : _volume);
   }
 
   Future<void> autoPlayLastIfEnabled() async {

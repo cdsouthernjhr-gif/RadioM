@@ -129,6 +129,20 @@ python3 tool/build_db.py
 strim berjaya dinyahkod, `unverified` jika belum diuji, `web_player` jika tiada strim yang lulus
 tetapi laman rasmi wujud. Tiada scraping, tiada pengekstrakan token, tiada pintasan sekatan penyiar.
 
+## Logo sendiri, volum & bisu, Android TV
+
+* **Logo sendiri:** pemain penuh → ikon gambar (atau tekan lama stesen dalam Direktori / Kegemaran).
+  Pilih gambar dari peranti, atau masukkan **URL gambar** (berguna pada TV box tanpa galeri). Logo
+  disimpan dalam folder peribadi aplikasi dan juga dipaparkan pada notifikasi / skrin kunci.
+  **Padam logo sendiri** mengembalikan logo asal; **Tetapan → Padam semua logo sendiri** membuang semuanya.
+  Gambar disahkan: hanya PNG/JPG/GIF/WebP (dikesan daripada bait fail), maksimum 3 MB, mesti boleh
+  dinyahkod; URL hanya `http`/`https`.
+* **Volum:** butang **kuatkan / perlahankan** (langkah 10%), slider dan peratus dalam pemain penuh;
+  butang **bisu** dalam pemain penuh dan pemain mini. Bisu mengekalkan aras volum dan memulihkannya.
+  Volum di sini ialah volum aplikasi; butang volum alat kawalan jauh / telefon masih mengawal volum sistem.
+* **Android TV / TV box:** tekan stesen yang sedang dimainkan sekali lagi (butang OK) untuk membuka
+  **pemain penuh** (logo, info lagu, volum). Sebelum ini tekanan kedua memulakan semula strim.
+
 ## Info lagu (RDS untuk radio internet)
 
 RDS (Radio Data System) sebenar dihantar dalam isyarat **FM** dan hanya boleh dibaca oleh cip penerima

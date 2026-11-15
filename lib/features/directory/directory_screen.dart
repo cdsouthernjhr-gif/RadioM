@@ -6,6 +6,7 @@ import '../../data/models/radio_station.dart';
 import '../../widgets/loading_widget.dart';
 import '../../widgets/radio_card.dart';
 import '../home/library_controller.dart';
+import '../../widgets/logo_editor.dart';
 import '../player/play_actions.dart';
 import '../player/player_controller.dart';
 import 'station_filter.dart';
@@ -125,6 +126,7 @@ class _DirectoryScreenState extends State<DirectoryScreen> {
                       isFavorite: lib.isFavorite(s.id),
                       onFavorite: () => lib.toggleFavorite(s.id),
                       onTap: () => playOrOpen(context, s),
+                      onLongPress: () => showLogoEditor(context, s),
                     );
                   },
                 ),

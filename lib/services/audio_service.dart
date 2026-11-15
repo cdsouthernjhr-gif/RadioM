@@ -21,7 +21,9 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
     required ConnectivityService connectivity,
     StreamPreferenceStore? preferences,
     AudioPlayer? player,
+    Uri? Function(RadioStation station)? artUriFor,
   })  : _resolver = resolver,
+        _artUriFor = artUriFor,
         _connectivity = connectivity,
         _prefs = preferences,
         _player = player ??
@@ -35,6 +37,7 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
   }
 
   final StreamResolver _resolver;
+  final Uri? Function(RadioStation station)? _artUriFor;
   final ConnectivityService _connectivity;
   final StreamPreferenceStore? _prefs;
   final AudioPlayer _player;
@@ -318,8 +321,15 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
       artist: np == null
           ? (station.primaryFrequency ?? 'Radio Malaysia')
           : [np.artist, station.name].whereType<String>().join(' • '),
-      artUri: station.logo == null ? null : Uri.tryParse(station.logo!),
+      artUri: _artUriFor?.call(station) ?? (station.logo == null ? null : Uri.tryParse(station.logo!)),
     ));
+  }
+
+  /// Re-publishes the notification / lock screen item (e.g. after the user
+  /// changed the station's logo).
+  void refreshMediaItem() {
+    final st = _snapshot.station;
+    if (st != null) _publishMediaItem(st, _snapshot.nowPlaying);
   }
 
   void _broadcastState(PlaybackEvent event) {

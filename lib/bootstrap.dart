@@ -12,6 +12,7 @@ import 'features/player/player_controller.dart';
 import 'features/settings/settings_controller.dart';
 import 'services/audio_service.dart';
 import 'services/connectivity_service.dart';
+import 'services/custom_logo_store.dart';
 import 'services/storage_service.dart';
 import 'services/stream_resolver.dart';
 
@@ -25,6 +26,7 @@ class AppServices {
     required this.settings,
     required this.player,
     required this.isTv,
+    required this.logos,
   });
 
   final StorageService storage;
@@ -34,12 +36,14 @@ class AppServices {
   final SettingsController settings;
   final PlayerController player;
   final bool isTv;
+  final CustomLogoStore logos;
 
   Widget buildApp() => MultiProvider(
         providers: [
           ChangeNotifierProvider.value(value: settings),
           ChangeNotifierProvider.value(value: library),
           ChangeNotifierProvider.value(value: player),
+          ChangeNotifierProvider.value(value: logos),
         ],
         child: MalaysiaRadioApp(isTv: isTv),
       );
@@ -52,12 +56,16 @@ Future<AppServices> bootstrap() async {
   final storage = await StorageService.create();
   final connectivity = PlusConnectivityService();
   final client = HttpClientFactory.create();
+  final logos = CustomLogoStore(client: client);
+  await logos.init();
 
   final handler = await AudioService.init<RadioAudioHandler>(
     builder: () => RadioAudioHandler(
       resolver: StreamResolver(client: client),
       connectivity: connectivity,
       preferences: storage,
+      // The user's own logo is shown in the notification / lock screen too.
+      artUriFor: (st) => logos.fileFor(st.id)?.uri,
     ),
     config: const AudioServiceConfig(
       androidNotificationChannelId: 'my.radiom.malaysia_radio_player.playback',
@@ -73,6 +81,7 @@ Future<AppServices> bootstrap() async {
   final library = LibraryController(repository: repository, storage: storage, connectivity: connectivity);
   final settings = SettingsController(storage);
   final player = PlayerController(playback: handler, storage: storage, library: library);
+  logos.addListener(handler.refreshMediaItem);
   final isTv = await PlatformBridge.isTv();
   return AppServices(
     storage: storage,
@@ -82,5 +91,6 @@ Future<AppServices> bootstrap() async {
     settings: settings,
     player: player,
     isTv: isTv,
+    logos: logos,
   );
 }

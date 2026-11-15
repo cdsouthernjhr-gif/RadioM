@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../widgets/radio_card.dart';
 import '../home/library_controller.dart';
+import '../../widgets/logo_editor.dart';
 import '../player/play_actions.dart';
 import '../player/player_controller.dart';
 
@@ -38,6 +39,7 @@ class FavoritesScreen extends StatelessWidget {
                   isFavorite: true,
                   onFavorite: () => lib.toggleFavorite(s.id),
                   onTap: () => playOrOpen(context, s),
+                  onLongPress: () => showLogoEditor(context, s),
                   // Up/down buttons make reordering possible with a TV remote.
                   trailing: Row(mainAxisSize: MainAxisSize.min, children: [
                     IconButton(

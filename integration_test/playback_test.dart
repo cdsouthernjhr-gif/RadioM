@@ -6,6 +6,8 @@
 // "IT_RESULT ..." lines. Markers "IT_MARKER:<name>" let a host script
 // (tool/ci_emulator_driver.sh) press HOME or toggle the network.
 
+import 'dart:ui' as ui;
+
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
@@ -160,6 +162,37 @@ void main() {
     }
     debugPrint('IT_RESULT test=metadata-summary received=$received of=${cases.length}');
   }, timeout: const Timeout(Duration(minutes: 8)));
+
+  testWidgets('custom logo (real decode) + notification art, and mute / volume', (tester) async {
+    final rec = ui.PictureRecorder();
+    Canvas(rec).drawRect(const Rect.fromLTWH(0, 0, 64, 64), Paint()..color = const Color(0xFF1ED6C3));
+    final img = await rec.endRecording().toImage(64, 64);
+    final png = (await img.toByteData(format: ui.ImageByteFormat.png))!.buffer.asUint8List();
+
+    final st = app.library.byId('rtm-nasional-fm')!;
+    await app.logos.setFromBytes(st.id, png);
+    final file = app.logos.fileFor(st.id);
+    await app.player.play(st);
+    await waitFor((s) => s == PlayerStatus.playing, const Duration(seconds: 45));
+    final art = app.handler.mediaItem.value?.artUri;
+    debugPrint('IT_RESULT test=custom-logo saved=${file?.existsSync()} art=$art');
+    expect(file?.existsSync(), isTrue);
+    expect(art?.scheme, 'file');
+
+    await app.player.setVolume(0.6);
+    await app.player.toggleMute();
+    final mutedOk = app.player.muted && app.handler.volume == 0.0 && app.handler.snapshot.status == PlayerStatus.playing;
+    await app.player.toggleMute();
+    final restoredOk = !app.player.muted && (app.handler.volume - 0.6).abs() < 0.01;
+    debugPrint('IT_RESULT test=volume muted=$mutedOk restored=$restoredOk');
+    expect(mutedOk, isTrue);
+    expect(restoredOk, isTrue);
+
+    await app.logos.remove(st.id);
+    expect(app.logos.has(st.id), isFalse);
+    await app.player.setVolume(1.0);
+    await app.handler.stop();
+  }, timeout: const Timeout(Duration(minutes: 3)));
 
   testWidgets('background playback continues after HOME', (tester) async {
     await app.handler.playStation(app.library.byId('rtm-radio-klasik')!);

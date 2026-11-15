@@ -79,10 +79,12 @@ class StationListTile extends StatelessWidget {
     this.onFavorite,
     this.trailing,
     this.autofocus = false,
+    this.onLongPress,
   });
 
   final RadioStation station;
   final VoidCallback onTap;
+  final VoidCallback? onLongPress;
   final bool isPlaying;
   final bool isFavorite;
   final VoidCallback? onFavorite;
@@ -101,6 +103,7 @@ class StationListTile extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
       child: TvFocusable(
         onTap: onTap,
+        onLongPress: onLongPress,
         autofocus: autofocus,
         semanticLabel: 'Mainkan ${station.name}',
         child: Card(

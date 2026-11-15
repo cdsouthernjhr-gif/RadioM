@@ -6,6 +6,7 @@ import '../features/home/library_controller.dart';
 import '../features/player/player_controller.dart';
 import '../services/player_types.dart';
 import 'audio_wave.dart';
+import 'logo_editor.dart';
 import 'now_playing_text.dart';
 import 'player_status_chip.dart';
 import 'station_logo.dart';
@@ -34,6 +35,12 @@ class FullPlayer extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Sedang Dimainkan'),
         actions: [
+          IconButton(
+            key: const Key('full-logo-edit'),
+            tooltip: 'Logo stesen (tambah / padam)',
+            icon: const Icon(Icons.image_outlined),
+            onPressed: () => showLogoEditor(context, station),
+          ),
           IconButton(
             tooltip: fav ? 'Buang kegemaran' : 'Tambah kegemaran',
             icon: Icon(fav ? Icons.favorite : Icons.favorite_border),
@@ -112,22 +119,8 @@ class FullPlayer extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 12),
-              SizedBox(
-                width: 340,
-                child: Row(children: [
-                  const Icon(Icons.volume_down_rounded),
-                  Expanded(
-                    child: Slider(
-                      key: const Key('volume-slider'),
-                      value: pc.volume,
-                      onChanged: pc.setVolume,
-                      label: '${(pc.volume * 100).round()}%',
-                      divisions: 20,
-                    ),
-                  ),
-                  const Icon(Icons.volume_up_rounded),
-                ]),
-              ),
+              const SizedBox(height: 4),
+              _VolumeBar(pc: pc),
               if (station.website != null)
                 TextButton.icon(
                   onPressed: () => PlayerController.openWebPlayer(station),
@@ -146,6 +139,66 @@ class FullPlayer extends StatelessWidget {
           );
         }),
       ),
+    );
+  }
+}
+
+/// Volume controls: mute, step down, slider, step up and the level in %.
+/// Buttons are large and focusable so a TV remote can use them.
+class _VolumeBar extends StatelessWidget {
+  const _VolumeBar({required this.pc});
+  final PlayerController pc;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final muted = pc.muted;
+    final pct = (pc.volume * 100).round();
+    return SizedBox(
+      width: 420,
+      child: Row(children: [
+        IconButton(
+          key: const Key('volume-mute'),
+          iconSize: 30,
+          isSelected: muted,
+          tooltip: muted ? 'Nyahbisu' : 'Bisu',
+          color: muted ? theme.colorScheme.error : null,
+          onPressed: pc.toggleMute,
+          icon: Icon(muted ? Icons.volume_off_rounded : Icons.volume_mute_rounded),
+        ),
+        IconButton(
+          key: const Key('volume-down'),
+          iconSize: 30,
+          tooltip: 'Perlahankan',
+          onPressed: pc.volume <= 0 && !muted ? null : pc.volumeDown,
+          icon: const Icon(Icons.volume_down_rounded),
+        ),
+        Expanded(
+          child: Slider(
+            key: const Key('volume-slider'),
+            value: pc.volume,
+            onChanged: pc.setVolume,
+            label: '$pct%',
+            divisions: 20,
+            inactiveColor: muted ? theme.disabledColor.withOpacity(0.3) : null,
+            activeColor: muted ? theme.disabledColor : null,
+          ),
+        ),
+        IconButton(
+          key: const Key('volume-up'),
+          iconSize: 30,
+          tooltip: 'Kuatkan',
+          onPressed: pc.volume >= 1 && !muted ? null : pc.volumeUp,
+          icon: const Icon(Icons.volume_up_rounded),
+        ),
+        SizedBox(
+          width: 52,
+          child: Text(muted ? 'Bisu' : '$pct%',
+              key: const Key('volume-label'),
+              textAlign: TextAlign.end,
+              style: theme.textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w700)),
+        ),
+      ]),
     );
   }
 }

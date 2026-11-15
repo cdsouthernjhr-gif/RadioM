@@ -68,6 +68,13 @@ class MiniPlayer extends StatelessWidget {
               onPressed: pc.toggle,
             ),
             IconButton(
+              key: const Key('mini-mute'),
+              tooltip: pc.muted ? 'Nyahbisu' : 'Bisu',
+              icon: Icon(pc.muted ? Icons.volume_off_rounded : Icons.volume_up_rounded),
+              color: pc.muted ? theme.colorScheme.error : null,
+              onPressed: pc.toggleMute,
+            ),
+            IconButton(
               key: const Key('mini-stop'),
               tooltip: 'Stop',
               icon: const Icon(Icons.stop_rounded),

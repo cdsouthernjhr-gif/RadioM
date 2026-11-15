@@ -26,7 +26,12 @@ class PlayerStatusChip extends StatelessWidget {
         else
           Icon(Icons.circle, size: 8, color: color),
         const SizedBox(width: 6),
-        Text(status.label, style: TextStyle(color: color, fontWeight: FontWeight.w700, fontSize: 12)),
+        Flexible(
+          child: Text(status.label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(color: color, fontWeight: FontWeight.w700, fontSize: 12)),
+        ),
       ]),
     );
   }

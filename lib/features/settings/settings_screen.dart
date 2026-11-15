@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../../core/constants/app_constants.dart';
 import '../../core/utils/text_utils.dart';
 import '../../data/models/radio_database.dart';
+import '../../services/custom_logo_store.dart';
 import '../home/library_controller.dart';
 import '../player/player_controller.dart';
 import 'settings_controller.dart';
@@ -61,6 +62,36 @@ class SettingsScreen extends StatelessWidget {
           value: settings.autoPlayLast,
           onChanged: settings.setAutoPlayLast,
         ),
+        const _Header('Logo sendiri'),
+        Builder(builder: (context) {
+          final logos = context.watch<CustomLogoStore>();
+          return ListTile(
+            key: const Key('setting-custom-logos'),
+            leading: const Icon(Icons.image_outlined),
+            title: const Text('Padam semua logo sendiri'),
+            subtitle: Text(logos.count == 0
+                ? 'Tiada logo sendiri. Tambah melalui pemain penuh (ikon gambar) atau tekan lama stesen dalam Direktori.'
+                : '${logos.count} stesen menggunakan logo anda sendiri'),
+            enabled: logos.count > 0,
+            onTap: () async {
+              final ok = await showDialog<bool>(
+                context: context,
+                builder: (c) => AlertDialog(
+                  title: const Text('Padam semua logo sendiri?'),
+                  content: const Text('Stesen akan kembali menggunakan logo asal.'),
+                  actions: [
+                    TextButton(onPressed: () => Navigator.pop(c, false), child: const Text('Batal')),
+                    FilledButton(
+                        key: const Key('confirm-delete-logos'),
+                        onPressed: () => Navigator.pop(c, true),
+                        child: const Text('Padam')),
+                  ],
+                ),
+              );
+              if (ok == true) await logos.clearAll();
+            },
+          );
+        }),
         const _Header('Pangkalan data'),
         ListTile(
           leading: const Icon(Icons.storage_rounded),
