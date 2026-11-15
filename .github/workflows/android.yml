@@ -29,7 +29,7 @@ jobs:
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter test
-      - name: flutter build apk --release (universal: armeabi-v7a + arm64-v8a + x86_64)
+      - name: 'flutter build apk --release (universal APK: armeabi-v7a, arm64-v8a, x86_64)'
         run: flutter build apk --release
       - name: Keep universal APK
         run: cp build/app/outputs/flutter-apk/app-release.apk build/malaysia-radio-player-universal.apk
