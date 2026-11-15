@@ -144,9 +144,19 @@ FM. Aplikasi ini memainkan **strim internet**, jadi ia menggunakan padanan RDS b
   ruang dirapatkan, panjang dihadkan (160 aksara), dan nilai kosong seperti `Unknown`, `-`, `Iklan`, URL
   atau nama stesen yang diulang diabaikan. Teks hanya dipaparkan sebagai teks biasa.
 * Boleh dimatikan: **Tetapan → Papar info lagu (RDS)**.
-* **Had:** hanya stesen yang menghantar metadata dalam strim akan memaparkan info lagu. Ujian emulator
-  merekod jenis strim yang benar-benar menghantar metadata (`IT_RESULT test=metadata …`). Metadata ID3
-  dalam HLS belum dipaparkan, dan ciri RDS lain (TP/TA, AF, jam) tidak berkenaan untuk strim internet.
+* **Diuji pada emulator Android 6.0 (CI, 2026-11-15)** — keputusan sebenar:
+
+  | Jenis strim | Contoh | Info lagu diterima | Teks yang diterima | Tajuk notifikasi |
+  |---|---|---|---|---|
+  | Icecast HTTP | KCFM | ✅ Ya | `Jubin Nautiyal - Humnava Mere` | `Humnava Mere` |
+  | revma AAC (Astro) | HITZ | ✅ Ya | `Doechii, Lady Gaga - Runway` | `Runway` |
+  | revma HLS (Astro) | MY | ❌ Tidak | – | nama stesen |
+  | StreamTheWorld MP3 (RTM) | Nasional FM | ❌ Tidak | – | nama stesen |
+
+* **Had:** hanya strim yang membawa metadata ICY memaparkan info lagu. Strim RTM (StreamTheWorld) dan
+  HLS tidak menghantarnya dalam ujian ini, jadi aplikasi hanya memaparkan nama stesen (tiada teks
+  rekaan). Metadata ID3 dalam HLS belum disokong, dan ciri RDS lain (TP/TA, AF, jam) tidak berkenaan
+  untuk strim internet.
 
 ## Resolver strim
 
@@ -263,7 +273,8 @@ Versi kebergantungan: lihat jadual [Kebergantungan](#kebergantungan-dipin-dalam-
 | Logo HTTPS (trust store Android 6) | ✅ LULUS | 5/5 dimuat |
 | Background playback (HOME ditekan oleh skrip hos) | ✅ LULUS | `wentBackground=true lifecycle=paused`, audio kekal `playing` 20 s |
 | Rangkaian terputus → sambung semula | ✅ LULUS | ping selepas OFF: 100% hilang; status `offline` → `playing` secara automatik |
-| Jumlah ujian integrasi | **12/12 lulus** | `All tests passed!` |
+| Info lagu (RDS/ICY) | ✅ LULUS | Icecast & revma AAC menghantar info lagu dan notifikasi dikemas kini; HLS & StreamTheWorld tiada metadata |
+| Jumlah ujian integrasi | **13/13 lulus** | `All tests passed!` (larian #43689363793) |
 | Navigasi alat kawalan jauh TV (D-pad) | ✅ LULUS (ujian widget hos) | `test/widget/tv_navigation_test.dart` — bukan pada peranti TV sebenar |
 
 ### Stesen & strim
