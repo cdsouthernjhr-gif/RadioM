@@ -246,7 +246,7 @@ dan `verify-streams` #43677788430). Semua nombor di bawah diambil daripada log C
 | APK armeabi-v7a (ARM32) | 16,073,132 bait (~16.1 MB) |
 | APK arm64-v8a (ARM64) | 18,647,247 bait (~18.6 MB) |
 | APK x86_64 | 19,766,106 bait (~19.8 MB) |
-| Lokasi APK | Artifact Actions **`apk-release`** (tab Actions → larian terkini → Artifacts) |
+| Lokasi APK | **GitHub Release [v1.0.0](https://github.com/cdsouthernjhr-gif/RadioM/releases/tag/v1.0.0)** (muat turun terus, dengan `SHA256SUMS.txt`); juga artifact Actions `apk-release` |
 | Tandatangan | Kunci *debug* kecuali `android/key.properties` disediakan (lihat [Membina](#membina)) |
 
 Versi kebergantungan: lihat jadual [Kebergantungan](#kebergantungan-dipin-dalam-pubspecyaml-transitif-dikunci-dalam-pubspeclock).
