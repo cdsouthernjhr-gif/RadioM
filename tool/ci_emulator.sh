@@ -30,7 +30,15 @@ log "== device"
 log "sdk=$(adb shell getprop ro.build.version.sdk | tr -d '\r') release=$(adb shell getprop ro.build.version.release | tr -d '\r') abi=$(adb shell getprop ro.product.cpu.abi | tr -d '\r')"
 
 log "== install release APK"
-if adb install -r "$APK" 2>&1 | tee -a "$OUT" | grep -q Success; then log "INSTALL=PASS"; else log "INSTALL=FAIL"; fi
+# Wait until the package manager answers (right after boot an install can be "Aborted").
+for i in $(seq 1 60); do adb shell pm path android 2>/dev/null | grep -q package: && break; sleep 2; done
+INSTALL=FAIL
+for attempt in 1 2 3; do
+  if adb install -r "$APK" 2>&1 | tee -a "$OUT" | grep -q Success; then INSTALL=PASS; break; fi
+  log "install attempt $attempt failed; retrying"; sleep 10
+done
+log "INSTALL=$INSTALL"
+sleep 5
 adb logcat -c
 adb shell am start -W -n $PKG/.MainActivity 2>&1 | tee -a "$OUT"
 sleep 20
