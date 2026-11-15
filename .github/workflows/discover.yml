@@ -1,0 +1,15 @@
+name: discover-stations
+on:
+  workflow_dispatch:
+  push:
+    branches: ['ccr-*']
+    paths: ['tool/discover_stations.py', '.github/workflows/discover.yml']
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tool/discover_stations.py > candidates.json
+      - run: python3 -c "import json;[print(json.dumps(s,ensure_ascii=False)) for s in json.load(open('candidates.json'))]"
+      - uses: actions/upload-artifact@v4
+        with: {name: candidates, path: candidates.json}
