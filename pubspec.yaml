@@ -1,5 +1,5 @@
 name: malaysia_radio_player
-description: "A new Flutter project."
+description: "Malaysia Radio Player - radio Malaysia untuk Android 6.0+ dan Android TV."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.0+1
+version: 1.1.0+2
 
 environment:
   sdk: ^3.5.4
@@ -42,10 +42,13 @@ dependencies:
   shared_preferences: 2.3.3
   connectivity_plus: 6.1.0
   cached_network_image: 3.4.1
+  flutter_cache_manager: 3.4.1
   url_launcher: 6.3.1
   provider: 6.1.2
+  image_picker: 1.1.2
 
 dependency_overrides:
+  image_picker_android: 0.8.12+17
   # Pin Android federated implementations to versions built with AGP 8.x /
   # Kotlin 1.9 toolchains that work with Flutter 3.24.5 and minSdk 23.
   shared_preferences_android: 2.3.4
@@ -57,13 +60,15 @@ dependency_overrides:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  integration_test:
+    sdk: flutter
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^4.0.0
+  flutter_lints: 4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -75,6 +80,11 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  assets:
+    - assets/data/malaysia_radio.json
+    - assets/certs/isrg_root_x1.pem
+    - assets/certs/isrg_root_x2.pem
 
   # To add assets to your application, add an assets section, like this:
   # assets:

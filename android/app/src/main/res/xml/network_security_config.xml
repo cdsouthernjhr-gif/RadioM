@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Applies to Android 7.0+ (API 24+). On Android 6.0 the equivalent behaviour is
+     implemented in MainActivity.kt. Certificate validation is never disabled:
+     we only ADD the official ISRG (Let's Encrypt) roots, which Android 7.0 lacks.
+     Cleartext HTTP is permitted because many Malaysian radio servers only offer
+     http:// Icecast/Shoutcast streams; the app prefers HTTPS where available. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="@raw/isrg_root_x1" />
+            <certificates src="@raw/isrg_root_x2" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
