@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "version": 1,
-  "last_updated": "2026-11-15T00:33:27Z",
-  "verification_checked_at": null,
+  "last_updated": "2026-11-15T00:37:45Z",
+  "verification_checked_at": "2026-11-15T00:35:16Z",
   "source": "https://github.com/cdsouthernjhr-gif/RadioM",
   "stations": [
     {
@@ -27,7 +27,10 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:39Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         },
         {
@@ -35,15 +38,18 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:39Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
       "state": null,
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "afo-chinese",
@@ -59,7 +65,10 @@
           "url": "https://stream.rcs.revma.com/7x3gv2y4bshvv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:05Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
@@ -68,8 +77,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "afo-english",
@@ -85,7 +94,10 @@
           "url": "https://stream.rcs.revma.com/8150ezy4bshvv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:05Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
@@ -94,8 +106,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-ai-fm",
@@ -106,7 +118,7 @@
       "languages": [
         "zh"
       ],
-      "website": "https://aifm.rtm.gov.my/",
+      "website": "https://radio.rtm.gov.my/",
       "logo": null,
       "frequencies": [
         {
@@ -124,7 +136,10 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:40Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         },
         {
@@ -132,12 +147,15 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:39Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "net-amboi-fm",
@@ -151,9 +169,12 @@
       "streams": [
         {
           "url": "http://amboifm.iradio.work:8000/listen.pls",
-          "format": "pls",
+          "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:36Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
@@ -162,8 +183,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-asyik-fm",
@@ -175,7 +196,7 @@
         "ms",
         "orang-asli"
       ],
-      "website": "https://asyikfm.rtm.gov.my/",
+      "website": "https://radio.rtm.gov.my/",
       "logo": null,
       "frequencies": [],
       "featured": false,
@@ -188,12 +209,15 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:42Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "bfm-899",
@@ -218,7 +242,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:38Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -226,14 +253,17 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:42Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
       "logo": null,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-bintulu-fm",
@@ -255,12 +285,15 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:42Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "cats-fm",
@@ -278,7 +311,10 @@
           "url": "https://stream.rcs.revma.com/51qe53rv0y3vv.m4a",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:04Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
@@ -286,8 +322,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "net-ceritera-fm",
@@ -303,7 +339,10 @@
           "url": "http://live.ceriterafm.my:8000/",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:36Z",
+            "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
+            "codec": "aac (LC) 48000Hz"
           }
         }
       ],
@@ -312,8 +351,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "cityplus-fm",
@@ -329,7 +368,10 @@
           "url": "https://stream.rcs.revma.com/9ykdmcawe1bwv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:06Z",
+            "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
+            "codec": "aac (LC) 48000Hz"
           }
         }
       ],
@@ -338,8 +380,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "mpa-eight-fm",
@@ -350,22 +392,25 @@
         "zh"
       ],
       "website": "https://www.eight.audio/",
-      "logo": "https://assets-mpa.eight.audio/media/Logo/logo-eight-wu-xian-1000x1000-09.jpg",
       "streams": [
         {
           "url": "https://stream.rcs.revma.com/qp0xrd9mtd3vv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:14Z",
+            "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
+            "codec": "aac (LC) 48000Hz"
           }
         }
       ],
       "state": null,
+      "logo": null,
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "astro-era",
@@ -405,21 +450,24 @@
           "mhz": "95.8"
         }
       ],
-      "logo": "https://assets-mpa.flyfm.audio/media/Logo/profile_photo_1000x1000-04.jpg",
       "streams": [
         {
           "url": "https://stream.rcs.revma.com/q17aka9mtd3vv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:14Z",
+            "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
+            "codec": "aac (LC) 48000Hz"
           }
         }
       ],
       "state": null,
+      "logo": null,
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "astro-gegar",
@@ -454,7 +502,10 @@
           "format": "mp3",
           "bitrate": 128,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:36Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
@@ -463,8 +514,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "astro-goxuan",
@@ -481,7 +532,10 @@
           "url": "https://stream.rcs.revma.com/xt9nhzsbv4uvv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:16Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         },
         {
@@ -489,7 +543,10 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:54Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
@@ -497,8 +554,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "astro-hitz",
@@ -521,15 +578,18 @@
           "url": "https://stream.rcs.revma.com/488kt4sbv4uvv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:03Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
       "state": null,
       "logo": null,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "mpa-hot-fm",
@@ -547,27 +607,33 @@
         }
       ],
       "featured": true,
-      "logo": "https://assets-mpa.hotfm.audio/media/Logo/profile_photo_1000x1000-01_v2.jpg",
       "streams": [
         {
           "url": "https://stream.rcs.revma.com/drakdf8mtd3vv/hls.m3u8",
           "format": "hls",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:11Z",
+            "detail": "10s audio dinyahkod (aac (HE-AAC) 48000Hz)",
+            "codec": "aac (HE-AAC) 48000Hz"
           }
         },
         {
           "url": "https://stream.rcs.revma.com/drakdf8mtd3vv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:10Z",
+            "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
+            "codec": "aac (LC) 48000Hz"
           }
         }
       ],
       "state": null,
+      "logo": null,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "ikim-fm",
@@ -590,22 +656,28 @@
           "url": "https://stream.rcs.revma.com/kz3pdu9wz2nwv/hls.m3u8",
           "format": "hls",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:13Z",
+            "detail": "10s audio dinyahkod (aac (HE-AAC) 44100Hz)",
+            "codec": "aac (HE-AAC) 44100Hz"
           }
         },
         {
           "url": "https://stream.rcs.revma.com/kz3pdu9wz2nwv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:13Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
       "state": null,
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-johor-fm",
@@ -627,7 +699,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:42Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -635,12 +710,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:42Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "net-kcfm",
@@ -658,7 +736,10 @@
           "format": "mp3",
           "bitrate": 128,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:38Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
@@ -666,8 +747,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-kedah-fm",
@@ -689,7 +770,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:44Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -697,12 +781,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:44Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-kelantan-fm",
@@ -713,7 +800,7 @@
       "languages": [
         "ms"
       ],
-      "website": "https://kelantanfm.rtm.gov.my/",
+      "website": "https://radio.rtm.gov.my/",
       "logo": null,
       "frequencies": [],
       "featured": false,
@@ -724,7 +811,10 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:44Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         },
         {
@@ -732,12 +822,15 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:44Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-keningau-fm",
@@ -748,7 +841,7 @@
       "languages": [
         "ms"
       ],
-      "website": "https://keningaufm.rtm.gov.my/",
+      "website": "https://radio.rtm.gov.my/",
       "logo": null,
       "frequencies": [],
       "featured": false,
@@ -759,12 +852,15 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:46Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-kl-fm",
@@ -791,7 +887,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:46Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -799,12 +898,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:46Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "mpa-kool-fm",
@@ -820,14 +922,20 @@
           "url": "https://stream.rcs.revma.com/3930238mtd3vv/hls.m3u8",
           "format": "hls",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:03Z",
+            "detail": "10s audio dinyahkod (aac (HE-AAC) 48000Hz)",
+            "codec": "aac (HE-AAC) 48000Hz"
           }
         },
         {
           "url": "https://stream.rcs.revma.com/3930238mtd3vv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:03Z",
+            "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
+            "codec": "aac (LC) 48000Hz"
           }
         }
       ],
@@ -836,8 +944,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-labuan-fm",
@@ -859,7 +967,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:46Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -867,12 +978,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:46Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-langkawi-fm",
@@ -883,7 +997,7 @@
       "languages": [
         "ms"
       ],
-      "website": "https://langkawifm.rtm.gov.my/",
+      "website": "https://radio.rtm.gov.my/",
       "logo": null,
       "frequencies": [],
       "featured": false,
@@ -894,12 +1008,15 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:47Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "astro-lite",
@@ -922,15 +1039,18 @@
           "url": "https://stream.rcs.revma.com/bn4ex8sbv4uvv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:09Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
       "state": null,
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "net-ltfm",
@@ -948,7 +1068,10 @@
           "format": "mp3",
           "bitrate": 128,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:36Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
@@ -956,8 +1079,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-melaka-fm",
@@ -979,7 +1102,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:47Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -987,12 +1113,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:47Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "astro-melody",
@@ -1014,14 +1143,20 @@
           "url": "https://stream.rcs.revma.com/2u1n6dtbv4uvv/hls.m3u8",
           "format": "hls",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:02Z",
+            "detail": "10s audio dinyahkod (aac (HE-AAC) 44100Hz)",
+            "codec": "aac (HE-AAC) 44100Hz"
           }
         },
         {
           "url": "https://stream.rcs.revma.com/2u1n6dtbv4uvv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:02Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
@@ -1029,8 +1164,8 @@
       "logo": null,
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-minnal-fm",
@@ -1041,7 +1176,7 @@
       "languages": [
         "ta"
       ],
-      "website": "https://minnalfm.rtm.gov.my/",
+      "website": "https://radio.rtm.gov.my/",
       "logo": null,
       "frequencies": [
         {
@@ -1059,7 +1194,10 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:49Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         },
         {
@@ -1067,12 +1205,14 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "failed",
+            "checked_at": "2026-11-15T00:34:48Z",
+            "detail": "HTTP 404"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-miri-fm",
@@ -1094,12 +1234,15 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:49Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "astro-mix",
@@ -1121,14 +1264,20 @@
           "url": "https://stream.rcs.revma.com/v5pq3htbv4uvv/hls.m3u8",
           "format": "hls",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:15Z",
+            "detail": "10s audio dinyahkod (aac (HE-AAC) 44100Hz)",
+            "codec": "aac (HE-AAC) 44100Hz"
           }
         },
         {
           "url": "https://stream.rcs.revma.com/v5pq3htbv4uvv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:14Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
@@ -1136,8 +1285,8 @@
       "logo": null,
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-mutiara-fm",
@@ -1159,7 +1308,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:49Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -1167,12 +1319,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:50Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "astro-my",
@@ -1194,14 +1349,20 @@
           "url": "https://stream.rcs.revma.com/hc3unrtbv4uvv/hls.m3u8",
           "format": "hls",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:12Z",
+            "detail": "10s audio dinyahkod (aac (HE-AAC) 44100Hz)",
+            "codec": "aac (HE-AAC) 44100Hz"
           }
         },
         {
           "url": "https://stream.rcs.revma.com/hc3unrtbv4uvv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:11Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
@@ -1209,8 +1370,8 @@
       "logo": null,
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-nasional-fm",
@@ -1221,7 +1382,7 @@
       "languages": [
         "ms"
       ],
-      "website": "https://nasionalfm.rtm.gov.my/",
+      "website": "https://radio.rtm.gov.my/",
       "logo": null,
       "frequencies": [
         {
@@ -1239,7 +1400,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:50Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -1247,12 +1411,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:50Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "net-nasyid-fm",
@@ -1271,7 +1438,10 @@
           "url": "http://stereo.nasyidfm.com:8000/",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:36Z",
+            "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
+            "codec": "aac (LC) 48000Hz"
           }
         }
       ],
@@ -1279,8 +1449,8 @@
       "logo": null,
       "frequencies": [],
       "featured": false,
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-negeri-fm",
@@ -1302,7 +1472,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:51Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -1310,12 +1483,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:51Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-pahang-fm",
@@ -1337,7 +1513,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:51Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -1345,12 +1524,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:53Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-perak-fm",
@@ -1368,24 +1550,29 @@
       "tags": [],
       "streams": [
         {
-          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PERAK_FM.mp3",
-          "format": "mp3",
-          "bitrate": 96,
-          "verification": {
-            "status": "untested"
-          }
-        },
-        {
           "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PERAK_FMAAC.aac",
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:53Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
+          }
+        },
+        {
+          "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PERAK_FM.mp3",
+          "format": "mp3",
+          "bitrate": 96,
+          "verification": {
+            "status": "failed",
+            "checked_at": "2026-11-15T00:34:53Z",
+            "detail": "HTTP 404"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-perlis-fm",
@@ -1407,7 +1594,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:53Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -1415,12 +1605,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:54Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "astro-raaga",
@@ -1442,7 +1635,10 @@
           "url": "https://stream.rcs.revma.com/1ut6qwtbv4uvv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:02Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
@@ -1450,8 +1646,8 @@
       "logo": null,
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-radio-klasik",
@@ -1462,7 +1658,7 @@
       "languages": [
         "ms"
       ],
-      "website": "https://radioklasik.rtm.gov.my/",
+      "website": "https://radio.rtm.gov.my/",
       "logo": null,
       "frequencies": [
         {
@@ -1481,7 +1677,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:54Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -1489,12 +1688,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:54Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "net-radio-kpkt",
@@ -1510,7 +1712,10 @@
           "url": "http://listen.kpkt.gov.my:8000/stream",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:36Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
@@ -1519,8 +1724,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "net-radio-rosak",
@@ -1530,13 +1735,16 @@
       "languages": [
         "ms"
       ],
-      "website": "http://radiorosak.com/",
+      "website": null,
       "streams": [
         {
           "url": "https://radiorosak.radioca.st/stream",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:01Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
@@ -1545,8 +1753,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-red-fm",
@@ -1569,12 +1777,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:54Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "net-rentak-pelangi",
@@ -1590,7 +1801,10 @@
           "url": "http://stream.tujuh.my/proxy/rpmfm/stream",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:36Z",
+            "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
+            "codec": "aac (LC) 48000Hz"
           }
         }
       ],
@@ -1599,8 +1813,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-sabah-fm",
@@ -1611,7 +1825,7 @@
       "languages": [
         "ms"
       ],
-      "website": "https://sabahfm.rtm.gov.my/",
+      "website": "https://radio.rtm.gov.my/",
       "logo": null,
       "frequencies": [],
       "featured": false,
@@ -1622,7 +1836,10 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:56Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         },
         {
@@ -1630,12 +1847,15 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:55Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-sabah-vfm",
@@ -1658,7 +1878,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:56Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -1666,12 +1889,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:56Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-sandakan-fm",
@@ -1693,12 +1919,15 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:57Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-sarawak-fm",
@@ -1720,7 +1949,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:57Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -1728,12 +1960,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:57Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-selangor-fm",
@@ -1760,7 +1995,10 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:58Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         },
         {
@@ -1768,12 +2006,15 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:59Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-sibu-fm",
@@ -1795,12 +2036,14 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "failed",
+            "checked_at": "2026-11-15T00:34:59Z",
+            "detail": "HTTP 404"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "web_player",
+      "status_note": "Tiada strim terus yang disahkan; buka pemain web rasmi."
     },
     {
       "id": "astro-sinar",
@@ -1823,15 +2066,18 @@
           "url": "https://stream.rcs.revma.com/azatk0tbv4uvv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:09Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
       "state": null,
       "logo": null,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "net-stay-fm",
@@ -1848,7 +2094,10 @@
           "format": "mp3",
           "bitrate": 192,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:02Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
@@ -1857,8 +2106,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-tawau-fm",
@@ -1880,12 +2129,15 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:59Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-terengganu-fm",
@@ -1896,7 +2148,7 @@
       "languages": [
         "ms"
       ],
-      "website": "https://terengganufm.rtm.gov.my/",
+      "website": "https://radio.rtm.gov.my/",
       "logo": null,
       "frequencies": [],
       "featured": false,
@@ -1907,7 +2159,10 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:00Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         },
         {
@@ -1915,12 +2170,15 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:59Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-traxx-fm",
@@ -1931,7 +2189,7 @@
       "languages": [
         "en"
       ],
-      "website": "https://traxxfm.rtm.gov.my/",
+      "website": "https://radio.rtm.gov.my/",
       "logo": null,
       "frequencies": [
         {
@@ -1949,7 +2207,10 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:00Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         },
         {
@@ -1957,12 +2218,15 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:00Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-wai-fm-bidayuh",
@@ -1973,7 +2237,7 @@
       "languages": [
         "bidayuh"
       ],
-      "website": "https://waifmbidayuh.rtm.gov.my/",
+      "website": "https://radio.rtm.gov.my/",
       "logo": null,
       "frequencies": [],
       "featured": false,
@@ -1984,12 +2248,15 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:00Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "rtm-wai-fm-iban",
@@ -2011,12 +2278,15 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:01Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "net-wheelerz",
@@ -2026,14 +2296,17 @@
       "languages": [
         "ms"
       ],
-      "website": "http://www.wheelerzradio.net/",
+      "website": null,
       "streams": [
         {
           "url": "http://167.114.131.90:5448/stream/",
           "format": "mp3",
           "bitrate": 320,
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:34:36Z",
+            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
+            "codec": "mp3 (mp3float) 44100Hz"
           }
         }
       ],
@@ -2042,8 +2315,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     },
     {
       "id": "astro-zayan",
@@ -2059,7 +2332,10 @@
           "url": "https://stream.rcs.revma.com/7ww2a4tbv4uvv",
           "format": "aac",
           "verification": {
-            "status": "untested"
+            "status": "verified",
+            "checked_at": "2026-11-15T00:35:04Z",
+            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
+            "codec": "aac (LC) 44100Hz"
           }
         }
       ],
@@ -2068,8 +2344,8 @@
       "frequencies": [],
       "featured": false,
       "tags": [],
-      "stream_type": "unverified",
-      "status_note": "Strim belum disahkan."
+      "stream_type": "direct",
+      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
     }
   ]
 }

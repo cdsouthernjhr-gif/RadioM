@@ -1,0 +1,131 @@
+// On-device integration tests. Run on a real Android device or emulator:
+//   flutter test integration_test/playback_test.dart -d <device>
+//
+// They use REAL network streams from the bundled database and the REAL
+// just_audio/ExoPlayer + audio_service stack. Results are printed as
+// "IT_RESULT ..." lines. Markers "IT_MARKER:<name>" let a host script
+// (tool/ci_emulator_driver.sh) press HOME or toggle the network.
+
+import 'package:flutter/foundation.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:integration_test/integration_test.dart';
+import 'package:malaysia_radio_player/bootstrap.dart';
+import 'package:malaysia_radio_player/data/models/radio_station.dart';
+import 'package:malaysia_radio_player/services/player_types.dart';
+
+const hostDriven = bool.fromEnvironment('HOST_DRIVER');
+
+void main() {
+  IntegrationTestWidgetsFlutterBinding.ensureInitialized();
+  late AppServices app;
+
+  Future<PlayerStatus> waitFor(bool Function(PlayerStatus) cond, Duration timeout) async {
+    final end = DateTime.now().add(timeout);
+    while (DateTime.now().isBefore(end)) {
+      final s = app.handler.snapshot.status;
+      if (cond(s)) return s;
+      await Future<void>.delayed(const Duration(milliseconds: 250));
+    }
+    return app.handler.snapshot.status;
+  }
+
+  RadioStation single(String id, bool Function(StreamSource) pick) {
+    final st = app.library.byId(id)!;
+    final s = st.streams.firstWhere(pick);
+    return RadioStation(
+      id: st.id,
+      name: st.name,
+      category: st.category,
+      streamType: st.streamType,
+      streams: [s],
+      network: st.network,
+    );
+  }
+
+  Future<void> expectPlays(String label, RadioStation station) async {
+    await app.handler.playStation(station);
+    final s = await waitFor((s) => s == PlayerStatus.playing || s == PlayerStatus.error, const Duration(seconds: 45));
+    var stable = s == PlayerStatus.playing;
+    if (stable) {
+      // Must keep playing (not drop to error) for 10 s.
+      for (var i = 0; i < 40; i++) {
+        await Future<void>.delayed(const Duration(milliseconds: 250));
+        if (app.handler.snapshot.status == PlayerStatus.error) stable = false;
+      }
+    }
+    debugPrint('IT_RESULT test=$label station=${station.id} url=${station.streams.single.url} '
+        'status=${app.handler.snapshot.status.name} stable=$stable msg=${app.handler.snapshot.message}');
+    await app.handler.stop();
+    expect(stable, isTrue, reason: '$label ${station.id}: ${app.handler.snapshot.message}');
+  }
+
+  setUpAll(() async {
+    app = await bootstrap();
+    await app.library.init();
+  });
+
+  testWidgets('app starts and loads the station database', (tester) async {
+    await tester.pumpWidget(app.buildApp());
+    await tester.pump(const Duration(seconds: 2));
+    expect(app.library.stations.length, greaterThan(50));
+    debugPrint('IT_RESULT test=database stations=${app.library.stations.length} '
+        'direct=${app.library.database!.directCount} source=${app.library.database!.source.name}');
+  });
+
+  testWidgets('direct MP3 playback', (tester) async {
+    await expectPlays('mp3', single('rtm-nasional-fm', (s) => s.format == StreamFormat.mp3));
+  }, timeout: const Timeout(Duration(minutes: 3)));
+
+  testWidgets('AAC playback', (tester) async {
+    await expectPlays('aac', single('astro-hitz', (s) => s.format == StreamFormat.aac));
+  }, timeout: const Timeout(Duration(minutes: 3)));
+
+  testWidgets('AAC (streamtheworld) playback', (tester) async {
+    await expectPlays('aac-stw', single('rtm-traxx-fm', (s) => s.format == StreamFormat.aac));
+  }, timeout: const Timeout(Duration(minutes: 3)));
+
+  testWidgets('HLS playback', (tester) async {
+    await expectPlays('hls', single('astro-my', (s) => s.format == StreamFormat.hls));
+  }, timeout: const Timeout(Duration(minutes: 3)));
+
+  testWidgets('HTTP (cleartext) Icecast playback', (tester) async {
+    await expectPlays('http-icecast', single('net-kcfm', (s) => s.url.startsWith('http://')));
+  }, timeout: const Timeout(Duration(minutes: 3)));
+
+  testWidgets('background playback continues after HOME', (tester) async {
+    await app.handler.playStation(app.library.byId('rtm-radio-klasik')!);
+    expect(await waitFor((s) => s == PlayerStatus.playing, const Duration(seconds: 45)), PlayerStatus.playing);
+    debugPrint('IT_MARKER:background_ready');
+    // Host presses HOME now (if host-driven); keep checking for 20 s.
+    var ok = true;
+    for (var i = 0; i < 80; i++) {
+      await Future<void>.delayed(const Duration(milliseconds: 250));
+      if (app.handler.snapshot.status != PlayerStatus.playing &&
+          app.handler.snapshot.status != PlayerStatus.buffering) ok = false;
+    }
+    debugPrint('IT_RESULT test=background hostDriven=$hostDriven ok=$ok status=${app.handler.snapshot.status.name}');
+    await app.handler.stop();
+    expect(ok, isTrue);
+  }, timeout: const Timeout(Duration(minutes: 3)));
+
+  testWidgets('network disconnect and reconnect', (tester) async {
+    if (!hostDriven) {
+      debugPrint('IT_RESULT test=network skipped=true reason=needs-host-driver');
+      return;
+    }
+    app.handler.autoReconnect = true;
+    await app.handler.playStation(app.library.byId('astro-hitz')!);
+    expect(await waitFor((s) => s == PlayerStatus.playing, const Duration(seconds: 45)), PlayerStatus.playing);
+    debugPrint('IT_MARKER:net_ready'); // host disables network
+    final lost = await waitFor(
+        (s) => s == PlayerStatus.offline || s == PlayerStatus.reconnecting || s == PlayerStatus.error,
+        const Duration(seconds: 90));
+    debugPrint('IT_MARKER:net_lost status=${lost.name}'); // host re-enables network
+    final back = await waitFor((s) => s == PlayerStatus.playing, const Duration(seconds: 150));
+    debugPrint('IT_RESULT test=network lost=${lost.name} recovered=${back.name} '
+        'attempts=${app.handler.snapshot.reconnectAttempt}');
+    await app.handler.stop();
+    expect(lost, isNot(PlayerStatus.playing), reason: 'disconnect should be detected');
+    expect(back, PlayerStatus.playing, reason: 'should auto-reconnect');
+  }, timeout: const Timeout(Duration(minutes: 6)));
+}

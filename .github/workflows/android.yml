@@ -1,0 +1,95 @@
+name: android-build-and-test
+on:
+  workflow_dispatch:
+    inputs:
+      run_emulator:
+        description: 'Run Android 6.0 (API 23) emulator tests'
+        type: boolean
+        default: true
+  push:
+    branches: ['ccr-*', 'main']
+    paths-ignore: ['docs/**', '**.md', 'tool/discover_stations.py']
+
+env:
+  FLUTTER_VERSION: '3.24.5'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '17'}
+      - uses: subosito/flutter-action@v2
+        with: {flutter-version: '${{ env.FLUTTER_VERSION }}', channel: stable, cache: true}
+      - name: Versions
+        run: flutter --version && java -version 2>&1 | head -1
+      - run: flutter clean
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+      - name: flutter build apk --release (universal: armeabi-v7a + arm64-v8a + x86_64)
+        run: flutter build apk --release
+      - name: Keep universal APK
+        run: cp build/app/outputs/flutter-apk/app-release.apk build/malaysia-radio-player-universal.apk
+      - name: flutter build apk --release --split-per-abi
+        run: flutter build apk --release --split-per-abi
+      - name: Inspect APKs (minSdk, ABIs, size)
+        run: |
+          AAPT=$(ls -d $ANDROID_HOME/build-tools/*/ | sort -V | tail -1)aapt2
+          for f in build/malaysia-radio-player-universal.apk build/app/outputs/flutter-apk/app-*-release.apk; do
+            echo "== $f"
+            echo "size_bytes=$(stat -c %s "$f")"
+            echo "sha256=$(sha256sum "$f" | cut -d' ' -f1)"
+            $AAPT dump badging "$f" | grep -E "^package:|sdkVersion|targetSdkVersion|native-code|leanback|uses-permission" || true
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: apk-release
+          path: |
+            build/malaysia-radio-player-universal.apk
+            build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk
+            build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
+            build/app/outputs/flutter-apk/app-x86_64-release.apk
+
+  emulator-api23:
+    needs: build
+    if: github.event_name != 'workflow_dispatch' || inputs.run_emulator
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '17'}
+      - uses: subosito/flutter-action@v2
+        with: {flutter-version: '${{ env.FLUTTER_VERSION }}', channel: stable, cache: true}
+      - uses: actions/download-artifact@v4
+        with: {name: apk-release, path: build/apk}
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - run: flutter pub get
+      - name: Android 6.0 (API 23) emulator tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 23
+          arch: x86_64
+          target: google_apis
+          force-avd-creation: false
+          emulator-options: -no-window -gpu swiftshader_indirect -no-boot-anim -camera-back none
+          disable-animations: true
+          script: bash tool/ci_emulator.sh build/apk/malaysia-radio-player-universal.apk
+      - name: Report
+        if: always()
+        run: cat build/emulator-report.txt || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: emulator-api23-report
+          path: |
+            build/emulator-report.txt
+            build/integration.log
+            build/emulator-launch.png

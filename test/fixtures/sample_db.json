@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "version": 5,
+  "last_updated": "2026-11-15T00:00:00Z",
+  "verification_checked_at": "2026-11-15T00:00:00Z",
+  "stations": [
+    {"id": "rtm-nasional-fm", "name": "Nasional FM", "category": "rtm", "network": "RTM", "state": null,
+     "languages": ["ms"], "frequencies": [{"area": "Lembah Klang", "mhz": "88.5"}], "logo": null,
+     "website": "https://radio.rtm.gov.my/", "featured": true, "tags": ["nasional"], "stream_type": "direct",
+     "streams": [{"url": "https://example.com/nasional.mp3", "format": "mp3", "bitrate": 96,
+                  "verification": {"status": "verified", "checked_at": "2026-11-15T00:00:00Z"}}]},
+    {"id": "rtm-kelantan-fm", "name": "Kelantan FM", "category": "rtm", "network": "RTM", "state": "Kelantan",
+     "languages": ["ms"], "frequencies": [], "logo": null, "website": "https://radio.rtm.gov.my/",
+     "featured": false, "tags": [], "stream_type": "direct",
+     "streams": [{"url": "https://example.com/kelantan.aac", "format": "aac",
+                  "verification": {"status": "verified"}}]},
+    {"id": "astro-hitz", "name": "HITZ", "category": "commercial", "network": "Astro Radio", "state": null,
+     "languages": ["en"], "frequencies": [{"area": "Lembah Klang", "mhz": "92.9"}], "logo": null,
+     "website": "https://hitz.com.my/", "featured": true, "tags": [], "stream_type": "direct",
+     "streams": [{"url": "https://example.com/hitz/hls.m3u8", "format": "hls", "verification": {"status": "verified"}}]},
+    {"id": "astro-era", "name": "ERA", "category": "commercial", "network": "Astro Radio", "state": null,
+     "languages": ["ms"], "frequencies": [], "logo": null, "website": "https://syok.my/",
+     "featured": false, "tags": [], "stream_type": "web_player", "streams": []},
+    {"id": "net-test", "name": "Ceritera FM", "category": "internet", "network": "Ceritera", "state": null,
+     "languages": ["ms"], "frequencies": [], "logo": null, "website": null,
+     "featured": false, "tags": [], "stream_type": "unverified",
+     "streams": [{"url": "http://example.com:8000/", "format": "aac", "verification": {"status": "untested"}}]},
+    {"id": "ai-fm", "name": "Ai FM", "category": "rtm", "network": "RTM", "state": null,
+     "languages": ["zh"], "frequencies": [], "logo": null, "website": null,
+     "featured": false, "tags": [], "stream_type": "direct",
+     "streams": [{"url": "https://example.com/ai.aac", "format": "aac", "verification": {"status": "verified"}}]}
+  ]
+}
