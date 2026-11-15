@@ -37,30 +37,32 @@ adb shell am force-stop $PKG
 adb uninstall $PKG >/dev/null 2>&1 || true
 
 log "== integration tests (debug build, real network streams)"
+: > build/integration.log
 adb logcat -c
 (
-  adb logcat -v brief flutter:I '*:S' | while IFS= read -r line; do
+  # IT_MARKER lines are printed by `flutter test` (stdout), so watch its log file.
+  tail -n +1 -F build/integration.log 2>/dev/null | while IFS= read -r line; do
     case "$line" in
       *IT_MARKER:background_ready*)
-        echo "[driver] pressing HOME" ; adb shell input keyevent KEYCODE_HOME ;;
+        echo "[driver] pressing HOME" | tee -a build/driver.log; adb shell input keyevent KEYCODE_HOME ;;
       *IT_MARKER:net_ready*)
-        echo "[driver] network OFF"; adb emu gsm data off; adb shell svc data disable; adb shell svc wifi disable
-        sleep 3; echo "[driver] ping after OFF: $(adb shell ping -c 1 -W 2 8.8.8.8 2>&1 | grep -E 'received|unreachable' | tr -d '\r')" ;;
+        echo "[driver] network OFF" | tee -a build/driver.log; adb emu gsm data off; adb shell svc data disable; adb shell svc wifi disable
+        sleep 3; echo "[driver] ping after OFF: $(adb shell ping -c 1 -W 2 8.8.8.8 2>&1 | grep -E 'received|unreachable' | tr -d '\r')" | tee -a build/driver.log ;;
       *IT_MARKER:net_lost*)
-        sleep 5; echo "[driver] network ON"; adb emu gsm data on; adb shell svc data enable; adb shell svc wifi enable ;;
+        sleep 5; echo "[driver] network ON" | tee -a build/driver.log; adb emu gsm data on; adb shell svc data enable; adb shell svc wifi enable ;;
     esac
   done
 ) &
 WATCHER=$!
 flutter test integration_test/playback_test.dart --dart-define=HOST_DRIVER=true -d emulator-5554 \
-  --reporter expanded 2>&1 | tee build/integration.log | grep --line-buffered -E "\[driver\]|IT_|\+[0-9]+" 
+  --reporter expanded 2>&1 | tee -a build/integration.log | grep --line-buffered -E "\[driver\]|IT_|\+[0-9]+" 
 RC=${PIPESTATUS[0]}
 kill $WATCHER 2>/dev/null || true
 adb emu gsm data on; adb shell svc data enable; adb shell svc wifi enable
-grep -E "IT_RESULT|IT_MARKER|\[driver\]" build/integration.log | tee -a "$OUT"
+log "== host driver actions"; cat build/driver.log 2>/dev/null | tee -a "$OUT"
+grep -E "IT_RESULT" build/integration.log | sort -u | tee -a "$OUT"
 log "== player/TLS errors from logcat"
 adb logcat -d -v brief '*:W' | grep -iE "ExoPlayer|SSL|Handshake|AudioPlayer|HttpDataSource|CertPath" | sort | uniq -c | sort -rn | head -40 | tee -a "$OUT"
-adb logcat -d -v brief flutter:I '*:S' | grep -E "IT_RESULT|IT_MARKER" | tee -a "$OUT"
 grep -E "^\s*[0-9:]+ \+[0-9]+.*(~[0-9]+)?(-[0-9]+)?:" build/integration.log | tail -1 | tee -a "$OUT"
 log "INTEGRATION_EXIT=$RC"
 exit 0

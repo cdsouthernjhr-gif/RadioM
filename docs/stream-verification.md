@@ -1,6 +1,6 @@
 # Laporan Pengesahan Strim / Stream Verification Report
 
-Diperiksa: `2026-11-15T01:09:37Z` (runner: github-actions, GitHub Actions ubuntu-latest).
+Diperiksa: `2026-11-15T01:31:42Z` (runner: github-actions, GitHub Actions ubuntu-latest).
 
 Kaedah: setiap URL dimuat turun dan **ffmpeg mesti menyahkod sekurang-kurangnya 6 saat audio sebenar**. HTTP 200 sahaja tidak dikira berjaya.
 
@@ -40,11 +40,11 @@ Kaedah: setiap URL dimuat turun dan **ffmpeg mesti menyahkod sekurang-kurangnya 
 | HITZ | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `http://stream.rcs.revma.com/488kt4sbv4uvv` |
 | Hot FM | hls | ✅ disahkan | 10s audio dinyahkod (aac (HE-AAC) 48000Hz) | `https://stream.rcs.revma.com/drakdf8mtd3vv/hls.m3u8` |
 | Hot FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 48000Hz) | `https://stream.rcs.revma.com/drakdf8mtd3vv` |
-| Hot FM | hls | ⏳ belum diuji |  | `http://stream.rcs.revma.com/drakdf8mtd3vv/hls.m3u8` |
+| Hot FM | hls | ✅ disahkan | 10s audio dinyahkod (aac (HE-AAC) 48000Hz) | `http://stream.rcs.revma.com/drakdf8mtd3vv/hls.m3u8` |
 | Hot FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 48000Hz) | `http://stream.rcs.revma.com/drakdf8mtd3vv` |
 | IKIMfm | hls | ✅ disahkan | 10s audio dinyahkod (aac (HE-AAC) 44100Hz) | `https://stream.rcs.revma.com/kz3pdu9wz2nwv/hls.m3u8` |
 | IKIMfm | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://stream.rcs.revma.com/kz3pdu9wz2nwv` |
-| IKIMfm | hls | ⏳ belum diuji |  | `http://stream.rcs.revma.com/kz3pdu9wz2nwv/hls.m3u8` |
+| IKIMfm | hls | ✅ disahkan | 10s audio dinyahkod (aac (HE-AAC) 44100Hz) | `http://stream.rcs.revma.com/kz3pdu9wz2nwv/hls.m3u8` |
 | IKIMfm | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `http://stream.rcs.revma.com/kz3pdu9wz2nwv` |
 | Johor FM | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/JOHOR_FM.mp3` |
 | Johor FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/JOHOR_FMAAC.aac` |
@@ -58,7 +58,7 @@ Kaedah: setiap URL dimuat turun dan **ffmpeg mesti menyahkod sekurang-kurangnya 
 | KL FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/KL_FMAAC.aac` |
 | Kool FM | hls | ✅ disahkan | 10s audio dinyahkod (aac (HE-AAC) 48000Hz) | `https://stream.rcs.revma.com/3930238mtd3vv/hls.m3u8` |
 | Kool FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 48000Hz) | `https://stream.rcs.revma.com/3930238mtd3vv` |
-| Kool FM | hls | ⏳ belum diuji |  | `http://stream.rcs.revma.com/3930238mtd3vv/hls.m3u8` |
+| Kool FM | hls | ✅ disahkan | 10s audio dinyahkod (aac (HE-AAC) 48000Hz) | `http://stream.rcs.revma.com/3930238mtd3vv/hls.m3u8` |
 | Kool FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 48000Hz) | `http://stream.rcs.revma.com/3930238mtd3vv` |
 | Labuan FM | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/LABUAN_FM.mp3` |
 | Labuan FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/LABUAN_FMAAC.aac` |
@@ -70,20 +70,20 @@ Kaedah: setiap URL dimuat turun dan **ffmpeg mesti menyahkod sekurang-kurangnya 
 | Melaka FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/MELAKA_FMAAC.aac` |
 | Melody | hls | ✅ disahkan | 10s audio dinyahkod (aac (HE-AAC) 44100Hz) | `https://stream.rcs.revma.com/2u1n6dtbv4uvv/hls.m3u8` |
 | Melody | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://stream.rcs.revma.com/2u1n6dtbv4uvv` |
-| Melody | hls | ⏳ belum diuji |  | `http://stream.rcs.revma.com/2u1n6dtbv4uvv/hls.m3u8` |
+| Melody | hls | ✅ disahkan | 10s audio dinyahkod (aac (HE-AAC) 44100Hz) | `http://stream.rcs.revma.com/2u1n6dtbv4uvv/hls.m3u8` |
 | Melody | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `http://stream.rcs.revma.com/2u1n6dtbv4uvv` |
 | Minnal FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/MINNAL_FMAAC_SC` |
 | Minnal FM | mp3 | ❌ gagal | HTTP 404 | `https://playerservices.streamtheworld.com/api/livestream-redirect/MINNAL_FM.mp3` |
 | Miri FM | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/MIRI_FM.mp3` |
 | MIX | hls | ✅ disahkan | 10s audio dinyahkod (aac (HE-AAC) 44100Hz) | `https://stream.rcs.revma.com/v5pq3htbv4uvv/hls.m3u8` |
 | MIX | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://stream.rcs.revma.com/v5pq3htbv4uvv` |
-| MIX | hls | ⏳ belum diuji |  | `http://stream.rcs.revma.com/v5pq3htbv4uvv/hls.m3u8` |
+| MIX | hls | ✅ disahkan | 10s audio dinyahkod (aac (HE-AAC) 44100Hz) | `http://stream.rcs.revma.com/v5pq3htbv4uvv/hls.m3u8` |
 | MIX | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `http://stream.rcs.revma.com/v5pq3htbv4uvv` |
 | Mutiara FM | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/MUTIARA_FM.mp3` |
 | Mutiara FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/MUTIARA_FMAAC.aac` |
 | MY | hls | ✅ disahkan | 10s audio dinyahkod (aac (HE-AAC) 44100Hz) | `https://stream.rcs.revma.com/hc3unrtbv4uvv/hls.m3u8` |
 | MY | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://stream.rcs.revma.com/hc3unrtbv4uvv` |
-| MY | hls | ⏳ belum diuji |  | `http://stream.rcs.revma.com/hc3unrtbv4uvv/hls.m3u8` |
+| MY | hls | ✅ disahkan | 10s audio dinyahkod (aac (HE-AAC) 44100Hz) | `http://stream.rcs.revma.com/hc3unrtbv4uvv/hls.m3u8` |
 | MY | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `http://stream.rcs.revma.com/hc3unrtbv4uvv` |
 | Nasional FM | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/NASIONAL_FM.mp3` |
 | Nasional FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/NASIONAL_FMAAC.aac` |
@@ -113,7 +113,7 @@ Kaedah: setiap URL dimuat turun dan **ffmpeg mesti menyahkod sekurang-kurangnya 
 | Sarawak FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/SARAWAK_FMAAC.aac` |
 | Selangor FM | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/SELANGOR_FM.mp3` |
 | Selangor FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/SELANGOR_FMAAC.aac` |
-| Sibu FM | mp3 | ❌ gagal | HTTP 404 | `https://playerservices.streamtheworld.com/api/livestream-redirect/SIBU_FM.mp3` |
+| Sibu FM | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/SIBU_FM.mp3` |
 | Sinar | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://stream.rcs.revma.com/azatk0tbv4uvv` |
 | Sinar | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `http://stream.rcs.revma.com/azatk0tbv4uvv` |
 | Stay.FM | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://stayfm.com:8443/archive` |
@@ -128,4 +128,4 @@ Kaedah: setiap URL dimuat turun dan **ffmpeg mesti menyahkod sekurang-kurangnya 
 | Zayan | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://stream.rcs.revma.com/7ww2a4tbv4uvv` |
 | Zayan | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `http://stream.rcs.revma.com/7ww2a4tbv4uvv` |
 
-**Jumlah URL strim: 117, disahkan: 108, gagal: 3, belum diuji: 6.**
+**Jumlah URL strim: 117, disahkan: 115, gagal: 2, belum diuji: 0.**
