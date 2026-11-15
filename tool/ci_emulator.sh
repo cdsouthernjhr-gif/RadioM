@@ -21,7 +21,12 @@ if adb install -r "$APK" 2>&1 | tee -a "$OUT" | grep -q Success; then log "INSTA
 adb logcat -c
 adb shell am start -W -n $PKG/.MainActivity 2>&1 | tee -a "$OUT"
 sleep 20
-if adb shell ps | grep -q "$PKG"; then log "LAUNCH_PROCESS=PASS"; else log "LAUNCH_PROCESS=FAIL"; fi
+if adb shell dumpsys activity activities | grep -E "mResumedActivity|mFocusedActivity" | grep -q "$PKG"; then
+  log "LAUNCH_FOREGROUND=PASS"
+else
+  log "LAUNCH_FOREGROUND=FAIL"; adb shell dumpsys activity activities | grep -E "mResumedActivity|mFocusedActivity" | tee -a "$OUT"
+fi
+if adb shell ps | tr -d '\r' | grep -q "malaysia_radio"; then log "LAUNCH_PROCESS=PASS"; else log "LAUNCH_PROCESS=FAIL"; fi
 if adb logcat -d | grep -E "FATAL EXCEPTION|AndroidRuntime: Process: $PKG" > build/crash.txt; then
   log "LAUNCH_CRASH=YES"; cat build/crash.txt | head -40 | tee -a "$OUT"
 else
@@ -52,6 +57,8 @@ RC=${PIPESTATUS[0]}
 kill $WATCHER 2>/dev/null || true
 adb shell svc data enable; adb shell svc wifi enable
 grep -E "IT_RESULT|IT_MARKER|\[driver\]" build/integration.log | tee -a "$OUT"
+log "== player/TLS errors from logcat"
+adb logcat -d -v brief '*:W' | grep -iE "ExoPlayer|SSL|Handshake|AudioPlayer|HttpDataSource|CertPath" | sort | uniq -c | sort -rn | head -40 | tee -a "$OUT"
 adb logcat -d -v brief flutter:I '*:S' | grep -E "IT_RESULT|IT_MARKER" | tee -a "$OUT"
 grep -E "^\s*[0-9:]+ \+[0-9]+.*(~[0-9]+)?(-[0-9]+)?:" build/integration.log | tail -1 | tee -a "$OUT"
 log "INTEGRATION_EXIT=$RC"

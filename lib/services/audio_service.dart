@@ -157,7 +157,8 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
     if (e is NotAudioException) return e.message;
     if (e is PlayerException) return 'Ralat pemain (${e.code}): ${e.message ?? 'format/sambungan'}';
     if (e is TimeoutException) return 'Sambungan tamat masa';
-    return 'Ralat sambungan strim';
+    final detail = e.toString();
+    return 'Ralat sambungan strim (${detail.length > 120 ? detail.substring(0, 120) : detail})';
   }
 
   @override

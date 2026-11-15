@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "version": 1,
-  "last_updated": "2026-11-15T00:37:45Z",
+  "version": 2,
+  "last_updated": "2026-11-15T01:07:47Z",
   "verification_checked_at": "2026-11-15T00:35:16Z",
   "source": "https://github.com/cdsouthernjhr-gif/RadioM",
   "stations": [
@@ -70,6 +70,13 @@
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/7x3gv2y4bshvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
         }
       ],
       "state": null,
@@ -98,6 +105,13 @@
             "checked_at": "2026-11-15T00:35:05Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
+          }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/8150ezy4bshvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
           }
         }
       ],
@@ -316,6 +330,13 @@
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/51qe53rv0y3vv.m4a",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
         }
       ],
       "logo": null,
@@ -373,6 +394,13 @@
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/9ykdmcawe1bwv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
         }
       ],
       "state": null,
@@ -401,6 +429,13 @@
             "checked_at": "2026-11-15T00:35:14Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
+          }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/qp0xrd9mtd3vv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
           }
         }
       ],
@@ -459,6 +494,13 @@
             "checked_at": "2026-11-15T00:35:14Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
+          }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/q17aka9mtd3vv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
           }
         }
       ],
@@ -548,6 +590,13 @@
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/xt9nhzsbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
         }
       ],
       "state": null,
@@ -582,6 +631,13 @@
             "checked_at": "2026-11-15T00:35:03Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
+          }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/488kt4sbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
           }
         }
       ],
@@ -627,6 +683,13 @@
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/drakdf8mtd3vv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
         }
       ],
       "state": null,
@@ -670,6 +733,13 @@
             "checked_at": "2026-11-15T00:35:13Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
+          }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/kz3pdu9wz2nwv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
           }
         }
       ],
@@ -937,6 +1007,13 @@
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/3930238mtd3vv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
         }
       ],
       "state": null,
@@ -1043,6 +1120,13 @@
             "checked_at": "2026-11-15T00:35:09Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
+          }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/bn4ex8sbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
           }
         }
       ],
@@ -1157,6 +1241,13 @@
             "checked_at": "2026-11-15T00:35:02Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
+          }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/2u1n6dtbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
           }
         }
       ],
@@ -1279,6 +1370,13 @@
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/v5pq3htbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
         }
       ],
       "state": null,
@@ -1363,6 +1461,13 @@
             "checked_at": "2026-11-15T00:35:11Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
+          }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/hc3unrtbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
           }
         }
       ],
@@ -1639,6 +1744,13 @@
             "checked_at": "2026-11-15T00:35:02Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
+          }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/1ut6qwtbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
           }
         }
       ],
@@ -2071,6 +2183,13 @@
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/azatk0tbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
+          }
         }
       ],
       "state": null,
@@ -2336,6 +2455,13 @@
             "checked_at": "2026-11-15T00:35:04Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
+          }
+        },
+        {
+          "url": "http://stream.rcs.revma.com/7ww2a4tbv4uvv",
+          "format": "aac",
+          "verification": {
+            "status": "untested"
           }
         }
       ],

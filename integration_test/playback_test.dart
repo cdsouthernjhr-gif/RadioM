@@ -92,6 +92,20 @@ void main() {
     await expectPlays('http-icecast', single('net-kcfm', (s) => s.url.startsWith('http://')));
   }, timeout: const Timeout(Duration(minutes: 3)));
 
+  testWidgets('HTTP fallback for revma CDN streams (Astro / Media Prima)', (tester) async {
+    await expectPlays('aac-http-fallback', single('astro-hitz', (s) => s.url.startsWith('http://')));
+  }, timeout: const Timeout(Duration(minutes: 3)));
+
+  testWidgets('full station with stream fallback order plays (HITZ)', (tester) async {
+    final st = app.library.byId('astro-hitz')!;
+    await app.handler.playStation(st);
+    final s = await waitFor((s) => s == PlayerStatus.playing, const Duration(seconds: 120));
+    debugPrint('IT_RESULT test=station-fallback station=${st.id} status=${s.name} '
+        'url=${app.handler.snapshot.streamUrl} msg=${app.handler.snapshot.message}');
+    await app.handler.stop();
+    expect(s, PlayerStatus.playing);
+  }, timeout: const Timeout(Duration(minutes: 4)));
+
   testWidgets('background playback continues after HOME', (tester) async {
     await app.handler.playStation(app.library.byId('rtm-radio-klasik')!);
     expect(await waitFor((s) => s == PlayerStatus.playing, const Duration(seconds: 45)), PlayerStatus.playing);
@@ -114,7 +128,7 @@ void main() {
       return;
     }
     app.handler.autoReconnect = true;
-    await app.handler.playStation(app.library.byId('astro-hitz')!);
+    await app.handler.playStation(app.library.byId('rtm-traxx-fm')!);
     expect(await waitFor((s) => s == PlayerStatus.playing, const Duration(seconds: 45)), PlayerStatus.playing);
     debugPrint('IT_MARKER:net_ready'); // host disables network
     final lost = await waitFor(
