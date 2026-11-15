@@ -57,6 +57,7 @@ Future<AppServices> bootstrap() async {
     builder: () => RadioAudioHandler(
       resolver: StreamResolver(client: client),
       connectivity: connectivity,
+      preferences: storage,
     ),
     config: const AudioServiceConfig(
       androidNotificationChannelId: 'my.radiom.malaysia_radio_player.playback',

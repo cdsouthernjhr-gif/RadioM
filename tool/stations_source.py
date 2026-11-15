@@ -172,18 +172,19 @@ STATIONS = [
 ]
 
 
-# Android 6.0 compatibility: the revma.com CDN's HTTPS endpoint failed on the
-# API 23 emulator (TLS handshake incompatibility with Android 6's TLS stack)
-# while HTTPS works on newer systems. For every direct (non-HLS) revma stream
-# we add the broadcaster CDN's plain-HTTP endpoint as a *fallback* after the
-# HTTPS one. HTTPS stays first (preferred); the fallback is only kept if
-# verify_streams.py decodes real audio from it.
+# Android 6.0 compatibility: on the API 23 emulator the revma.com CDN HTTPS
+# endpoint timed out (no response headers; SocketTimeoutException in
+# HttpURLConnection) while HTTPS works on newer systems and in CI. For every
+# revma stream (incl. HLS) the same CDN's plain-HTTP endpoint is added as a
+# *fallback* after the HTTPS one. HTTPS stays first (preferred); the app
+# remembers per device which stream worked. A fallback is only marked
+# verified if verify_streams.py decodes real audio from it.
 def _add_http_fallbacks(stations):
     for st in stations:
         extra = []
         for strm in st["streams"]:
             u = strm["url"]
-            if u.startswith(REVMA) and ".m3u8" not in u:
+            if u.startswith(REVMA):
                 extra.append(dict(strm, url="http://" + u[len("https://"):]))
         st["streams"] = st["streams"] + [e for e in extra if e["url"] not in {x["url"] for x in st["streams"]}]
 

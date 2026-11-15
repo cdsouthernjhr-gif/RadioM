@@ -4,10 +4,11 @@ import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../core/constants/app_constants.dart';
+import 'player_types.dart';
 
 /// Local persistence: user preferences (SharedPreferences) and the cached
 /// database file (app documents directory). Nothing sensitive is stored.
-class StorageService {
+class StorageService implements StreamPreferenceStore {
   StorageService(this._prefs, {Future<Directory> Function()? directoryProvider})
       : _dirProvider = directoryProvider ?? getApplicationSupportDirectory;
 
@@ -49,6 +50,13 @@ class StorageService {
 
   String? get lastStationId => _prefs.getString(_kLastStation);
   Future<void> setLastStationId(String id) => _prefs.setString(_kLastStation, id);
+
+  // ---- per-station working stream (device-specific) ----
+  @override
+  String? preferredStream(String stationId) => _prefs.getString('pref_stream_$stationId');
+  @override
+  Future<void> setPreferredStream(String stationId, String url) =>
+      _prefs.setString('pref_stream_$stationId', url);
 
   // ---- database cache ----
   String? get databaseEtag => _prefs.getString(_kEtag);

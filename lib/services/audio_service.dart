@@ -18,16 +18,23 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
   RadioAudioHandler({
     required StreamResolver resolver,
     required ConnectivityService connectivity,
+    StreamPreferenceStore? preferences,
     AudioPlayer? player,
   })  : _resolver = resolver,
         _connectivity = connectivity,
+        _prefs = preferences,
         _player = player ?? AudioPlayer(userAgent: AppConstants.userAgent) {
     _init();
   }
 
   final StreamResolver _resolver;
   final ConnectivityService _connectivity;
+  final StreamPreferenceStore? _prefs;
   final AudioPlayer _player;
+
+  /// True while _start() is trying streams one by one; player errors raised
+  /// during that time are handled by the loop itself (prevents racing retries).
+  bool _switching = false;
 
   final _snapshots = StreamController<PlayerSnapshot>.broadcast();
   PlayerSnapshot _snapshot = const PlayerSnapshot();
@@ -79,7 +86,9 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
     _retryTimer?.cancel();
     _wantPlaying = true;
     _attempt = 0;
-    _streamIndex = 0;
+    final preferred = _prefs?.preferredStream(station.id);
+    final idx = preferred == null ? -1 : station.playableStreams.indexWhere((s) => s.url == preferred);
+    _streamIndex = idx < 0 ? 0 : idx;
     mediaItem.add(MediaItem(
       id: station.id,
       title: station.name,
@@ -103,31 +112,41 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
       return;
     }
     Object? lastError;
-    for (var i = 0; i < streams.length; i++) {
-      final idx = (_streamIndex + i) % streams.length;
-      if (session != _session) return;
-      try {
-        final resolved = await _resolver.resolve(streams[idx]);
+    _switching = true;
+    try {
+      for (var i = 0; i < streams.length; i++) {
+        final idx = (_streamIndex + i) % streams.length;
         if (session != _session) return;
-        _emit(_snapshot.copyWith(
-          status: PlayerStatus.loading,
-          streamUrl: resolved.uri.toString(),
-          formatLabel: resolved.format == StreamFormat.unknown ? streams[idx].format.label : resolved.format.label,
-        ));
-        final source = resolved.kind == StreamKind.hls
-            ? HlsAudioSource(resolved.uri)
-            : ProgressiveAudioSource(resolved.uri);
-        await _player.setAudioSource(source, preload: true).timeout(const Duration(seconds: 30));
-        if (session != _session) return;
-        _streamIndex = idx;
-        // play() completes only when playback pauses/stops, so don't await it.
-        unawaited(_player.play().catchError((Object e) => _onPlayerError(e)));
-        return;
-      } on PlayerInterruptedException {
-        return; // superseded by another request
-      } catch (e) {
-        lastError = e;
+        try {
+          final resolved = await _resolver.resolve(streams[idx]);
+          if (session != _session) return;
+          _emit(_snapshot.copyWith(
+            status: PlayerStatus.loading,
+            streamUrl: resolved.uri.toString(),
+            formatLabel: resolved.format == StreamFormat.unknown ? streams[idx].format.label : resolved.format.label,
+          ));
+          final source =
+              resolved.kind == StreamKind.hls ? HlsAudioSource(resolved.uri) : ProgressiveAudioSource(resolved.uri);
+          await _player.setAudioSource(source, preload: true).timeout(const Duration(seconds: 20));
+          if (session != _session) return;
+          _streamIndex = idx;
+          _prefs?.setPreferredStream(station.id, streams[idx].url);
+          _switching = false;
+          // play() completes only when playback pauses/stops, so don't await it.
+          unawaited(_player.play().catchError((Object e) => _onPlayerError(e)));
+          return;
+        } on PlayerInterruptedException {
+          return; // superseded by another request
+        } catch (e) {
+          lastError = e;
+          // Abort the failed load before trying the next stream.
+          try {
+            await _player.stop();
+          } catch (_) {}
+        }
       }
+    } finally {
+      if (session == _session) _switching = false;
     }
     if (session != _session) return;
     _handleFailure(station, session, lastError);
@@ -165,7 +184,8 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
   Future<void> resume() async {
     final st = _snapshot.station;
     if (st == null) return;
-    if (_player.audioSource == null || _snapshot.status == PlayerStatus.error ||
+    if (_player.audioSource == null ||
+        _snapshot.status == PlayerStatus.error ||
         _snapshot.status == PlayerStatus.offline) {
       return playStation(st);
     }
@@ -211,7 +231,8 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
     final ps = state.processingState;
     if (ps == ProcessingState.buffering || ps == ProcessingState.loading) {
       if (_snapshot.status != PlayerStatus.reconnecting) {
-        _emit(_snapshot.copyWith(status: ps == ProcessingState.loading ? PlayerStatus.loading : PlayerStatus.buffering));
+        _emit(
+            _snapshot.copyWith(status: ps == ProcessingState.loading ? PlayerStatus.loading : PlayerStatus.buffering));
       }
       _armStallWatchdog();
     } else if (ps == ProcessingState.ready) {
@@ -222,7 +243,7 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
       } else if (_snapshot.status != PlayerStatus.idle) {
         _emit(_snapshot.copyWith(status: PlayerStatus.paused));
       }
-    } else if (ps == ProcessingState.completed && _wantPlaying) {
+    } else if (ps == ProcessingState.completed && _wantPlaying && !_switching) {
       // A live stream should never "complete": the server closed the connection.
       _handleFailure(st, _session, Exception('Strim terputus'));
     }
@@ -234,8 +255,7 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
     final session = _session;
     _stallTimer = Timer(_stallTimeout, () {
       final st = _snapshot.station;
-      if (st != null && session == _session && _wantPlaying &&
-          _player.processingState != ProcessingState.ready) {
+      if (st != null && session == _session && _wantPlaying && _player.processingState != ProcessingState.ready) {
         _handleFailure(st, session, TimeoutException('buffering terlalu lama'));
       }
     });
@@ -243,7 +263,7 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
 
   void _onPlayerError(Object e, [StackTrace? _]) {
     final st = _snapshot.station;
-    if (st == null) return;
+    if (st == null || _switching) return;
     if (!_connectivity.isOnline) {
       _emit(_snapshot.copyWith(status: PlayerStatus.offline, message: 'Sambungan terputus'));
       return;
@@ -260,8 +280,10 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
       if (_wantPlaying) {
         _emit(_snapshot.copyWith(status: PlayerStatus.offline, message: 'Sambungan internet terputus'));
       }
-    } else if (_wantPlaying && autoReconnect &&
-        (_snapshot.status == PlayerStatus.offline || _snapshot.status == PlayerStatus.error ||
+    } else if (_wantPlaying &&
+        autoReconnect &&
+        (_snapshot.status == PlayerStatus.offline ||
+            _snapshot.status == PlayerStatus.error ||
             _snapshot.status == PlayerStatus.reconnecting)) {
       _attempt = 0;
       _retryTimer?.cancel();

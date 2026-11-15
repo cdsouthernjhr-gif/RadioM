@@ -130,7 +130,7 @@ def write_report(results):
              "> Ujian ini dijalankan dari pelayan CI (Amerika Syarikat/Eropah). Sesetengah strim mungkin "
              "dihadkan mengikut geografi (geo-blocked) dan berkelakuan berbeza di Malaysia. Ujian ini juga "
              "BUKAN ujian main balik pada peranti Android 6.0 sebenar.", ""]
-    total = ok = 0
+    total = ok = untested = 0
     lines += ["| Stesen | Format | Status | Butiran | URL |", "|---|---|---|---|---|"]
     for st in sorted(STATIONS, key=lambda x: x["name"].lower()):
         if not st["streams"]:
@@ -138,10 +138,12 @@ def write_report(results):
         for s in st["streams"]:
             r = sres.get(s["url"], {}); total += 1
             ok += r.get("status") == "verified"
-            mark = "✅ disahkan" if r.get("status") == "verified" else "❌ gagal"
+            untested += not r
+            mark = ("✅ disahkan" if r.get("status") == "verified" else "❌ gagal") if r else "⏳ belum diuji"
             det = (r.get("detail") or "").replace("|", "/")
             lines.append(f"| {st['name']} | {r.get('codec_format') or s['format']} | {mark} | {det} | `{s['url']}` |")
-    lines += ["", f"**Jumlah URL strim: {total}, disahkan: {ok}, gagal: {total - ok}.**", ""]
+    lines += ["", f"**Jumlah URL strim: {total}, disahkan: {ok}, gagal: {total - ok - untested}, "
+                  f"belum diuji: {untested}.**", ""]
     os.makedirs(os.path.join(ROOT, "docs"), exist_ok=True)
     open(os.path.join(ROOT, "docs", "stream-verification.md"), "w").write("\n".join(lines))
 

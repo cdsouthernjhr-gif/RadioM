@@ -44,18 +44,19 @@ adb logcat -c
       *IT_MARKER:background_ready*)
         echo "[driver] pressing HOME" ; adb shell input keyevent KEYCODE_HOME ;;
       *IT_MARKER:net_ready*)
-        echo "[driver] network OFF"; adb shell svc data disable; adb shell svc wifi disable ;;
+        echo "[driver] network OFF"; adb emu gsm data off; adb shell svc data disable; adb shell svc wifi disable
+        sleep 3; echo "[driver] ping after OFF: $(adb shell ping -c 1 -W 2 8.8.8.8 2>&1 | grep -E 'received|unreachable' | tr -d '\r')" ;;
       *IT_MARKER:net_lost*)
-        sleep 5; echo "[driver] network ON"; adb shell svc data enable; adb shell svc wifi enable ;;
+        sleep 5; echo "[driver] network ON"; adb emu gsm data on; adb shell svc data enable; adb shell svc wifi enable ;;
     esac
   done
 ) &
 WATCHER=$!
 flutter test integration_test/playback_test.dart --dart-define=HOST_DRIVER=true -d emulator-5554 \
-  --reporter expanded 2>&1 | tee build/integration.log
+  --reporter expanded 2>&1 | tee build/integration.log | grep --line-buffered -E "\[driver\]|IT_|\+[0-9]+" 
 RC=${PIPESTATUS[0]}
 kill $WATCHER 2>/dev/null || true
-adb shell svc data enable; adb shell svc wifi enable
+adb emu gsm data on; adb shell svc data enable; adb shell svc wifi enable
 grep -E "IT_RESULT|IT_MARKER|\[driver\]" build/integration.log | tee -a "$OUT"
 log "== player/TLS errors from logcat"
 adb logcat -d -v brief '*:W' | grep -iE "ExoPlayer|SSL|Handshake|AudioPlayer|HttpDataSource|CertPath" | sort | uniq -c | sort -rn | head -40 | tee -a "$OUT"

@@ -96,6 +96,10 @@ void main() {
     await expectPlays('aac-http-fallback', single('astro-hitz', (s) => s.url.startsWith('http://')));
   }, timeout: const Timeout(Duration(minutes: 3)));
 
+  testWidgets('HLS over HTTP (revma CDN)', (tester) async {
+    await expectPlays('hls-http', single('astro-my', (s) => s.format == StreamFormat.hls && s.url.startsWith('http://')));
+  }, timeout: const Timeout(Duration(minutes: 3)));
+
   testWidgets('full station with stream fallback order plays (HITZ)', (tester) async {
     final st = app.library.byId('astro-hitz')!;
     await app.handler.playStation(st);

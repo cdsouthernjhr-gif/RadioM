@@ -67,3 +67,11 @@ abstract class RadioPlayback {
   Future<void> stop();
   Future<void> setVolume(double v);
 }
+
+/// Remembers which stream URL last worked for a station so the next start
+/// skips streams known to fail on this device (e.g. HTTPS endpoints that time
+/// out on Android 6.0).
+abstract class StreamPreferenceStore {
+  String? preferredStream(String stationId);
+  Future<void> setPreferredStream(String stationId, String url);
+}
