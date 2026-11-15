@@ -43,7 +43,13 @@ jobs:
             echo "size_bytes=$(stat -c %s "$f")"
             echo "sha256=$(sha256sum "$f" | cut -d' ' -f1)"
             $AAPT dump badging "$f" | grep -E "^package:|sdkVersion|targetSdkVersion|native-code|leanback|uses-permission" || true
+            echo "manifest $($AAPT dump xmltree --file AndroidManifest.xml "$f" | grep -E 'minSdkVersion|targetSdkVersion' | tr -s ' ' | tr '\n' ' ')"
           done
+      - name: Assert minSdkVersion == 23
+        run: |
+          AAPT=$(ls -d $ANDROID_HOME/build-tools/*/ | sort -V | tail -1)aapt2
+          $AAPT dump xmltree --file AndroidManifest.xml build/malaysia-radio-player-universal.apk | grep -A0 minSdkVersion
+          $AAPT dump xmltree --file AndroidManifest.xml build/malaysia-radio-player-universal.apk | grep minSdkVersion | grep -qE '=23|0x17|\(0x00000017\)|=0x17' && echo "minSdk=23 OK"
       - uses: actions/upload-artifact@v4
         with:
           name: apk-release
