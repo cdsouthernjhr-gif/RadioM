@@ -21,6 +21,7 @@ class StorageService implements StreamPreferenceStore {
   static const _kTheme = 'theme_mode';
   static const _kAutoReconnect = 'auto_reconnect';
   static const _kAutoPlayLast = 'auto_play_last';
+  static const _kShowNowPlaying = 'show_now_playing';
   static const _kFavorites = 'favorites';
   static const _kRecent = 'recent';
   static const _kLastStation = 'last_station';
@@ -37,6 +38,10 @@ class StorageService implements StreamPreferenceStore {
 
   bool get autoPlayLast => _prefs.getBool(_kAutoPlayLast) ?? false;
   Future<void> setAutoPlayLast(bool v) => _prefs.setBool(_kAutoPlayLast, v);
+
+  /// Show song / programme text from the stream metadata (RDS-like).
+  bool get showNowPlaying => _prefs.getBool(_kShowNowPlaying) ?? true;
+  Future<void> setShowNowPlaying(bool v) => _prefs.setBool(_kShowNowPlaying, v);
 
   double get volume => (_prefs.getDouble(_kVolume) ?? 1.0).clamp(0.0, 1.0);
   Future<void> setVolume(double v) => _prefs.setDouble(_kVolume, v.clamp(0.0, 1.0));

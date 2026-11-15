@@ -129,6 +129,38 @@ void main() {
     expect(s, PlayerStatus.playing);
   }, timeout: const Timeout(Duration(minutes: 4)));
 
+  testWidgets('stream metadata (RDS-like now playing) per stream type', (tester) async {
+    // Stations are not required to send metadata, so this records what each
+    // stream type actually delivers on Android 6; it only asserts that
+    // metadata which does arrive reaches the notification / lock screen.
+    final cases = <String, RadioStation>{
+      'icecast-http': single('net-kcfm', (s) => s.url.startsWith('http://')),
+      'stw-mp3': single('rtm-nasional-fm', (s) => s.format == StreamFormat.mp3),
+      'revma-aac': single('astro-hitz', (s) => s.url.startsWith('https://') && s.format != StreamFormat.hls),
+      'revma-hls': single('astro-my', (s) => s.format == StreamFormat.hls && s.url.startsWith('https://')),
+    };
+    var received = 0;
+    for (final e in cases.entries) {
+      await app.handler.playStation(e.value);
+      await waitFor((s) => s == PlayerStatus.playing || s == PlayerStatus.error, const Duration(seconds: 45));
+      final end = DateTime.now().add(const Duration(seconds: 30));
+      while (app.handler.snapshot.nowPlaying == null && DateTime.now().isBefore(end)) {
+        await Future<void>.delayed(const Duration(milliseconds: 250));
+      }
+      final np = app.handler.snapshot.nowPlaying;
+      final item = app.handler.mediaItem.value;
+      debugPrint('IT_RESULT test=metadata kind=${e.key} station=${e.value.id} '
+          'status=${app.handler.snapshot.status.name} received=${np != null} '
+          'text="${np?.text ?? ''}" notificationTitle="${item?.title ?? ''}"');
+      if (np != null) {
+        received++;
+        expect(item?.title, np.headline, reason: 'lock screen / notification must show the song');
+      }
+      await app.handler.stop();
+    }
+    debugPrint('IT_RESULT test=metadata-summary received=$received of=${cases.length}');
+  }, timeout: const Timeout(Duration(minutes: 8)));
+
   testWidgets('background playback continues after HOME', (tester) async {
     await app.handler.playStation(app.library.byId('rtm-radio-klasik')!);
     expect(await waitFor((s) => s == PlayerStatus.playing, const Duration(seconds: 45)), PlayerStatus.playing);

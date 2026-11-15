@@ -1,3 +1,4 @@
+import '../core/utils/now_playing.dart';
 import '../data/models/radio_station.dart';
 
 enum PlayerStatus { idle, loading, buffering, playing, paused, reconnecting, error, offline }
@@ -26,6 +27,7 @@ class PlayerSnapshot {
     this.streamUrl,
     this.formatLabel,
     this.reconnectAttempt = 0,
+    this.nowPlaying,
   });
 
   final RadioStation? station;
@@ -35,6 +37,11 @@ class PlayerSnapshot {
   final String? formatLabel;
   final int reconnectAttempt;
 
+  /// Song / programme text from the stream's own metadata (ICY StreamTitle),
+  /// the internet-radio counterpart of FM RDS RadioText. Null when the
+  /// station sends none.
+  final NowPlaying? nowPlaying;
+
   PlayerSnapshot copyWith({
     RadioStation? station,
     PlayerStatus? status,
@@ -43,6 +50,8 @@ class PlayerSnapshot {
     String? streamUrl,
     String? formatLabel,
     int? reconnectAttempt,
+    NowPlaying? nowPlaying,
+    bool clearNowPlaying = false,
   }) =>
       PlayerSnapshot(
         station: station ?? this.station,
@@ -51,6 +60,7 @@ class PlayerSnapshot {
         streamUrl: streamUrl ?? this.streamUrl,
         formatLabel: formatLabel ?? this.formatLabel,
         reconnectAttempt: reconnectAttempt ?? this.reconnectAttempt,
+        nowPlaying: clearNowPlaying ? null : (nowPlaying ?? this.nowPlaying),
       );
 }
 

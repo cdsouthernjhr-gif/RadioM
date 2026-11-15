@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../features/player/player_controller.dart';
 import '../services/player_types.dart';
 import 'full_player.dart';
+import 'now_playing_text.dart';
 import 'player_status_chip.dart';
 import 'station_logo.dart';
 import 'tv_focusable.dart';
@@ -45,6 +46,7 @@ class MiniPlayer extends StatelessWidget {
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700)),
+                        const NowPlayingLine(),
                         const SizedBox(height: 2),
                         PlayerStatusChip(status: status),
                       ]),

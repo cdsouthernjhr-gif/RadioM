@@ -49,6 +49,13 @@ class SettingsScreen extends StatelessWidget {
           },
         ),
         SwitchListTile(
+          key: const Key('setting-now-playing'),
+          title: const Text('Papar info lagu (RDS)'),
+          subtitle: const Text('Tajuk lagu / rancangan daripada metadata strim stesen (ICY), jika dihantar'),
+          value: settings.showNowPlaying,
+          onChanged: settings.setShowNowPlaying,
+        ),
+        SwitchListTile(
           title: const Text('Auto play last station'),
           subtitle: const Text('Mainkan stesen terakhir apabila aplikasi dibuka'),
           value: settings.autoPlayLast,

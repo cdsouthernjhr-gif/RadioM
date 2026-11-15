@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 
 import '../../core/network/logo_cache.dart';
-
 import '../../services/storage_service.dart';
 
 class SettingsController extends ChangeNotifier {
@@ -23,6 +22,12 @@ class SettingsController extends ChangeNotifier {
   bool get autoReconnect => storage.autoReconnect;
   Future<void> setAutoReconnect(bool v) async {
     await storage.setAutoReconnect(v);
+    notifyListeners();
+  }
+
+  bool get showNowPlaying => storage.showNowPlaying;
+  Future<void> setShowNowPlaying(bool v) async {
+    await storage.setShowNowPlaying(v);
     notifyListeners();
   }
 

@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../core/utils/now_playing.dart';
 import '../../core/utils/platform_bridge.dart';
 import '../../core/utils/url_validator.dart';
 import '../../data/models/radio_station.dart';
@@ -36,6 +37,9 @@ class PlayerController extends ChangeNotifier {
   RadioStation? get station => _snapshot.station;
   PlayerStatus get status => _snapshot.status;
   double get volume => _volume;
+
+  /// Stream metadata (RDS-like RadioText); null if hidden or not sent.
+  NowPlaying? get nowPlaying => storage.showNowPlaying ? _snapshot.nowPlaying : null;
   bool get isActive => _snapshot.station != null && _snapshot.status != PlayerStatus.idle;
 
   set autoReconnect(bool v) => playback.autoReconnect = v;

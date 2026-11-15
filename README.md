@@ -129,6 +129,25 @@ python3 tool/build_db.py
 strim berjaya dinyahkod, `unverified` jika belum diuji, `web_player` jika tiada strim yang lulus
 tetapi laman rasmi wujud. Tiada scraping, tiada pengekstrakan token, tiada pintasan sekatan penyiar.
 
+## Info lagu (RDS untuk radio internet)
+
+RDS (Radio Data System) sebenar dihantar dalam isyarat **FM** dan hanya boleh dibaca oleh cip penerima
+FM. Aplikasi ini memainkan **strim internet**, jadi ia menggunakan padanan RDS bagi strim tersebut:
+
+| RDS (FM) | Padanan strim internet | Paparan dalam aplikasi |
+|---|---|---|
+| PS (nama stesen) | Nama stesen daripada pangkalan data | Tajuk pemain |
+| RT (RadioText: artis – lagu) | Metadata ICY `StreamTitle` (Icecast/Shoutcast) | Panel **"Kini bersiaran"** dalam pemain penuh, baris kedua dalam pemain mini, notifikasi dan skrin kunci |
+
+* Teks `Artis - Lagu` dipecahkan kepada lagu (baris 1) dan artis (baris 2), seperti paparan RDS kereta.
+* Teks daripada pelayan dianggap **tidak dipercayai**: aksara kawalan dan aksara arah teks dibuang,
+  ruang dirapatkan, panjang dihadkan (160 aksara), dan nilai kosong seperti `Unknown`, `-`, `Iklan`, URL
+  atau nama stesen yang diulang diabaikan. Teks hanya dipaparkan sebagai teks biasa.
+* Boleh dimatikan: **Tetapan → Papar info lagu (RDS)**.
+* **Had:** hanya stesen yang menghantar metadata dalam strim akan memaparkan info lagu. Ujian emulator
+  merekod jenis strim yang benar-benar menghantar metadata (`IT_RESULT test=metadata …`). Metadata ID3
+  dalam HLS belum dipaparkan, dan ciri RDS lain (TP/TA, AF, jam) tidak berkenaan untuk strim internet.
+
 ## Resolver strim
 
 | Jenis | Pengesanan | Tindakan |

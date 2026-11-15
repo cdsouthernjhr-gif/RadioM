@@ -6,6 +6,7 @@ import '../features/home/library_controller.dart';
 import '../features/player/player_controller.dart';
 import '../services/player_types.dart';
 import 'audio_wave.dart';
+import 'now_playing_text.dart';
 import 'player_status_chip.dart';
 import 'station_logo.dart';
 import 'status_badge.dart';
@@ -74,6 +75,7 @@ class FullPlayer extends StatelessWidget {
                 StationStatusBadge(station: station),
                 if (pc.snapshot.formatLabel != null) Chip(label: Text(pc.snapshot.formatLabel!), visualDensity: VisualDensity.compact),
               ]),
+              NowPlayingPanel(center: !wide),
               if (pc.snapshot.message != null) ...[
                 const SizedBox(height: 8),
                 Text(pc.snapshot.message!,

@@ -6,6 +6,7 @@ import 'package:audio_session/audio_session.dart';
 import 'package:just_audio/just_audio.dart';
 
 import '../core/constants/app_constants.dart';
+import '../core/utils/now_playing.dart';
 import '../data/models/radio_station.dart';
 import 'connectivity_service.dart';
 import 'player_types.dart';
@@ -76,6 +77,7 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
 
     _player.playbackEventStream.listen(_broadcastState, onError: _onPlayerError);
     _player.playerStateStream.listen(_onPlayerState, onError: (_) {});
+    _player.icyMetadataStream.listen(_onIcyMetadata, onError: (_) {});
     _netSub = _connectivity.onlineChanges.listen(_onConnectivity);
   }
 
@@ -95,13 +97,7 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
     final preferred = _prefs?.preferredStream(station.id);
     final idx = preferred == null ? -1 : station.playableStreams.indexWhere((s) => s.url == preferred);
     _streamIndex = idx < 0 ? 0 : idx;
-    mediaItem.add(MediaItem(
-      id: station.id,
-      title: station.name,
-      album: station.network ?? 'Malaysia Radio',
-      artist: station.primaryFrequency ?? 'Radio Malaysia',
-      artUri: station.logo == null ? null : Uri.tryParse(station.logo!),
-    ));
+    _publishMediaItem(station, null);
     _emit(PlayerSnapshot(station: station, status: PlayerStatus.loading));
     await _start(station, session);
   }
@@ -301,6 +297,29 @@ class RadioAudioHandler extends BaseAudioHandler implements RadioPlayback {
       _emit(_snapshot.copyWith(status: PlayerStatus.reconnecting, message: 'Internet kembali, menyambung semula…'));
       _start(st, session);
     }
+  }
+
+  /// Show metadata in the app, the notification and on the lock screen.
+  /// Like RDS: line 1 = song (RadioText), line 2 = artist • station (PS).
+  void _onIcyMetadata(IcyMetadata? icy) {
+    final st = _snapshot.station;
+    if (st == null) return;
+    final np = NowPlaying.parse(icy?.info?.title, stationName: st.name);
+    if (np == _snapshot.nowPlaying) return;
+    _emit(np == null ? _snapshot.copyWith(clearNowPlaying: true) : _snapshot.copyWith(nowPlaying: np));
+    _publishMediaItem(st, np);
+  }
+
+  void _publishMediaItem(RadioStation station, NowPlaying? np) {
+    mediaItem.add(MediaItem(
+      id: station.id,
+      title: np?.headline ?? station.name,
+      album: station.network ?? 'Malaysia Radio',
+      artist: np == null
+          ? (station.primaryFrequency ?? 'Radio Malaysia')
+          : [np.artist, station.name].whereType<String>().join(' • '),
+      artUri: station.logo == null ? null : Uri.tryParse(station.logo!),
+    ));
   }
 
   void _broadcastState(PlaybackEvent event) {
