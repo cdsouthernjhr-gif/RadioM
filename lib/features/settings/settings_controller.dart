@@ -1,5 +1,7 @@
-import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_cache_manager/flutter_cache_manager.dart';
+
+import '../../core/network/logo_cache.dart';
 
 import '../../services/storage_service.dart';
 
@@ -36,6 +38,7 @@ class SettingsController extends ChangeNotifier {
     PaintingBinding.instance.imageCache.clearLiveImages();
     try {
       await DefaultCacheManager().emptyCache();
+      await LogoCache.clear();
     } catch (_) {}
   }
 }

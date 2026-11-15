@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../core/config/app_theme.dart';
+import '../core/network/logo_cache.dart';
 import '../core/utils/text_utils.dart';
 import '../data/models/radio_station.dart';
 
@@ -28,6 +29,9 @@ class StationLogo extends StatelessWidget {
             ? fallback
             : CachedNetworkImage(
                 imageUrl: station.logo!,
+                cacheManager: LogoCache.instance,
+                // A failed logo just shows the monogram; don't report it as an app error.
+                errorListener: (_) {},
                 memCacheWidth: px,
                 maxWidthDiskCache: 512,
                 fit: BoxFit.cover,

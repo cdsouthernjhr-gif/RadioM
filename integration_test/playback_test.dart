@@ -10,6 +10,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 import 'package:malaysia_radio_player/bootstrap.dart';
+import 'package:malaysia_radio_player/core/network/logo_cache.dart';
 import 'package:malaysia_radio_player/data/models/radio_station.dart';
 import 'package:malaysia_radio_player/services/player_types.dart';
 
@@ -72,6 +73,22 @@ void main() {
     debugPrint('IT_RESULT test=database stations=${app.library.stations.length} '
         'direct=${app.library.database!.directCount} source=${app.library.database!.source.name}');
   });
+
+  testWidgets('station logos load over HTTPS (Android 6 trust store)', (tester) async {
+    var ok = 0, failed = 0;
+    for (final st in app.library.stations.where((s) => s.logo != null)) {
+      try {
+        await LogoCache.instance.getSingleFile(st.logo!).timeout(const Duration(seconds: 20));
+        ok++;
+        debugPrint('IT_RESULT test=logo station=${st.id} ok=true');
+      } catch (e) {
+        failed++;
+        final m = e.toString().replaceAll('\n', ' ');
+        debugPrint('IT_RESULT test=logo station=${st.id} ok=false error=${m.length > 140 ? m.substring(0, 140) : m}');
+      }
+    }
+    debugPrint('IT_RESULT test=logos ok=$ok failed=$failed');
+  }, timeout: const Timeout(Duration(minutes: 3)));
 
   testWidgets('direct MP3 playback', (tester) async {
     await expectPlays('mp3', single('rtm-nasional-fm', (s) => s.format == StreamFormat.mp3));
