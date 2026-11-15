@@ -68,6 +68,8 @@ Perubahan & sebab:
 | `FOREGROUND_SERVICE_MEDIA_PLAYBACK` (API 34) | Diisytihar dalam manifest; diabaikan oleh versi lama. |
 | `networkSecurityConfig` (API 24) | Diabaikan oleh API 23; `usesCleartextTraffic` digunakan. |
 | Strim HTTP (Icecast/Shoutcast) | Cleartext dibenarkan (banyak pelayan radio Malaysia hanya http); HTTPS diutamakan dalam pangkalan data. |
+| just_audio menghantar strim melalui proksi Dart tempatan apabila User-Agent ditetapkan; proksi itu guna `HttpClient` biasa tanpa sijil ISRG → `CERTIFICATE_VERIFY_FAILED` / timeout HTTPS pada API 23 | `useProxyForRequestHeaders: false` (ExoPlayer hantar header sendiri) dan `HttpOverrides.global` memberi semua `HttpClient` Dart trust store yang sama (sistem + ISRG). |
+| Logo HTTPS pada API 23 | Logo dimuat melalui `HttpClientFactory` (cache khas `LogoCache`); gagal → monogram. |
 | RAM rendah pada TV box | Logo dinyahkod pada saiz paparan (`memCacheWidth`), animasi berhenti bila tidak bermain. |
 
 ## Struktur projek

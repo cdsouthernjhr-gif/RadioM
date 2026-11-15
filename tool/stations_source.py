@@ -172,9 +172,10 @@ STATIONS = [
 ]
 
 
-# Android 6.0 compatibility: on the API 23 emulator the revma.com CDN HTTPS
-# endpoint timed out (no response headers; SocketTimeoutException in
-# HttpURLConnection) while HTTPS works on newer systems and in CI. For every
+# Android 6.0 compatibility: revma.com HTTPS once timed out on the API 23
+# emulator (that was caused by just_audio's local Dart proxy, now disabled;
+# HTTPS plays on API 23 since). The plain-HTTP endpoint is kept as a safety
+# net for old devices / networks where HTTPS still fails. For every
 # revma stream (incl. HLS) the same CDN's plain-HTTP endpoint is added as a
 # *fallback* after the HTTPS one. HTTPS stays first (preferred); the app
 # remembers per device which stream worked. A fallback is only marked

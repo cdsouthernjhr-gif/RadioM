@@ -94,17 +94,17 @@ void main() {
     await expectPlays('mp3', single('rtm-nasional-fm', (s) => s.format == StreamFormat.mp3));
   }, timeout: const Timeout(Duration(minutes: 3)));
 
-  testWidgets('AAC playback (revma HTTPS; known to time out on Android 6, recorded only)', (tester) async {
-    await expectPlays('aac-revma-https', single('astro-hitz', (s) => s.url.startsWith('https://')), assertOk: false);
+  testWidgets('AAC playback over HTTPS (revma CDN)', (tester) async {
+    await expectPlays('aac-revma-https', single('astro-hitz', (s) => s.url.startsWith('https://')));
   }, timeout: const Timeout(Duration(minutes: 3)));
 
   testWidgets('AAC (streamtheworld) playback', (tester) async {
     await expectPlays('aac-stw', single('rtm-traxx-fm', (s) => s.format == StreamFormat.aac));
   }, timeout: const Timeout(Duration(minutes: 3)));
 
-  testWidgets('HLS playback (revma HTTPS; known to time out on Android 6, recorded only)', (tester) async {
-    await expectPlays('hls-revma-https',
-        single('astro-my', (s) => s.format == StreamFormat.hls && s.url.startsWith('https://')), assertOk: false);
+  testWidgets('HLS playback over HTTPS (revma CDN)', (tester) async {
+    await expectPlays(
+        'hls-revma-https', single('astro-my', (s) => s.format == StreamFormat.hls && s.url.startsWith('https://')));
   }, timeout: const Timeout(Duration(minutes: 3)));
 
   testWidgets('HTTP (cleartext) Icecast playback', (tester) async {
