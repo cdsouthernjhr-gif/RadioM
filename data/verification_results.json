@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-15T01:31:42Z",
+  "checked_at": "2026-11-15T04:42:04Z",
   "runner": "github-actions",
   "streams": {
     "http://167.114.131.90:5448/stream/": {
       "url": "http://167.114.131.90:5448/stream/",
-      "checked_at": "2026-11-15T01:30:35Z",
+      "checked_at": "2026-11-15T04:40:57Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -15,7 +15,7 @@
     },
     "http://amboifm.iradio.work:8000/listen.pls": {
       "url": "http://amboifm.iradio.work:8000/listen.pls",
-      "checked_at": "2026-11-15T01:30:35Z",
+      "checked_at": "2026-11-15T04:40:57Z",
       "http_status": 200,
       "content_type": "audio/x-scpls",
       "resolved_url": "http://amboifm.iradio.work:8000/stream",
@@ -27,7 +27,7 @@
     },
     "http://gemersikfm.iradio.work:8000/;": {
       "url": "http://gemersikfm.iradio.work:8000/;",
-      "checked_at": "2026-11-15T01:30:35Z",
+      "checked_at": "2026-11-15T04:40:57Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -38,7 +38,7 @@
     },
     "http://listen.kpkt.gov.my:8000/stream": {
       "url": "http://listen.kpkt.gov.my:8000/stream",
-      "checked_at": "2026-11-15T01:30:35Z",
+      "checked_at": "2026-11-15T04:40:57Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -49,7 +49,7 @@
     },
     "http://live.ceriterafm.my:8000/": {
       "url": "http://live.ceriterafm.my:8000/",
-      "checked_at": "2026-11-15T01:30:35Z",
+      "checked_at": "2026-11-15T04:40:57Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 48000Hz",
@@ -60,7 +60,7 @@
     },
     "http://live.ltfmonline.com:8000/stream": {
       "url": "http://live.ltfmonline.com:8000/stream",
-      "checked_at": "2026-11-15T01:30:35Z",
+      "checked_at": "2026-11-15T04:40:57Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -71,7 +71,7 @@
     },
     "http://stereo.nasyidfm.com:8000/": {
       "url": "http://stereo.nasyidfm.com:8000/",
-      "checked_at": "2026-11-15T01:30:35Z",
+      "checked_at": "2026-11-15T04:40:57Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 48000Hz",
@@ -82,7 +82,7 @@
     },
     "http://stream.rcs.revma.com/1ut6qwtbv4uvv": {
       "url": "http://stream.rcs.revma.com/1ut6qwtbv4uvv",
-      "checked_at": "2026-11-15T01:30:35Z",
+      "checked_at": "2026-11-15T04:40:57Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -93,7 +93,7 @@
     },
     "http://stream.rcs.revma.com/2u1n6dtbv4uvv": {
       "url": "http://stream.rcs.revma.com/2u1n6dtbv4uvv",
-      "checked_at": "2026-11-15T01:30:38Z",
+      "checked_at": "2026-11-15T04:40:59Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -104,7 +104,7 @@
     },
     "http://stream.rcs.revma.com/2u1n6dtbv4uvv/hls.m3u8": {
       "url": "http://stream.rcs.revma.com/2u1n6dtbv4uvv/hls.m3u8",
-      "checked_at": "2026-11-15T01:30:38Z",
+      "checked_at": "2026-11-15T04:40:59Z",
       "http_status": 200,
       "content_type": "application/vnd.apple.mpegurl; charset=utf-8",
       "codec": "aac (HE-AAC) 44100Hz",
@@ -115,7 +115,7 @@
     },
     "http://stream.rcs.revma.com/3930238mtd3vv": {
       "url": "http://stream.rcs.revma.com/3930238mtd3vv",
-      "checked_at": "2026-11-15T01:30:38Z",
+      "checked_at": "2026-11-15T04:41:00Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 48000Hz",
@@ -126,7 +126,7 @@
     },
     "http://stream.rcs.revma.com/3930238mtd3vv/hls.m3u8": {
       "url": "http://stream.rcs.revma.com/3930238mtd3vv/hls.m3u8",
-      "checked_at": "2026-11-15T01:30:38Z",
+      "checked_at": "2026-11-15T04:41:00Z",
       "http_status": 200,
       "content_type": "application/vnd.apple.mpegurl; charset=utf-8",
       "codec": "aac (HE-AAC) 48000Hz",
@@ -137,7 +137,7 @@
     },
     "http://stream.rcs.revma.com/488kt4sbv4uvv": {
       "url": "http://stream.rcs.revma.com/488kt4sbv4uvv",
-      "checked_at": "2026-11-15T01:30:38Z",
+      "checked_at": "2026-11-15T04:41:00Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -148,7 +148,7 @@
     },
     "http://stream.rcs.revma.com/51qe53rv0y3vv.m4a": {
       "url": "http://stream.rcs.revma.com/51qe53rv0y3vv.m4a",
-      "checked_at": "2026-11-15T01:30:39Z",
+      "checked_at": "2026-11-15T04:41:01Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -159,7 +159,7 @@
     },
     "http://stream.rcs.revma.com/7ww2a4tbv4uvv": {
       "url": "http://stream.rcs.revma.com/7ww2a4tbv4uvv",
-      "checked_at": "2026-11-15T01:30:40Z",
+      "checked_at": "2026-11-15T04:41:01Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -170,7 +170,7 @@
     },
     "http://stream.rcs.revma.com/7x3gv2y4bshvv": {
       "url": "http://stream.rcs.revma.com/7x3gv2y4bshvv",
-      "checked_at": "2026-11-15T01:30:40Z",
+      "checked_at": "2026-11-15T04:41:01Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -181,7 +181,7 @@
     },
     "http://stream.rcs.revma.com/8150ezy4bshvv": {
       "url": "http://stream.rcs.revma.com/8150ezy4bshvv",
-      "checked_at": "2026-11-15T01:30:40Z",
+      "checked_at": "2026-11-15T04:41:01Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -192,7 +192,7 @@
     },
     "http://stream.rcs.revma.com/9ykdmcawe1bwv": {
       "url": "http://stream.rcs.revma.com/9ykdmcawe1bwv",
-      "checked_at": "2026-11-15T01:30:43Z",
+      "checked_at": "2026-11-15T04:41:05Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 48000Hz",
@@ -203,7 +203,7 @@
     },
     "http://stream.rcs.revma.com/azatk0tbv4uvv": {
       "url": "http://stream.rcs.revma.com/azatk0tbv4uvv",
-      "checked_at": "2026-11-15T01:30:43Z",
+      "checked_at": "2026-11-15T04:41:06Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -214,7 +214,7 @@
     },
     "http://stream.rcs.revma.com/bn4ex8sbv4uvv": {
       "url": "http://stream.rcs.revma.com/bn4ex8sbv4uvv",
-      "checked_at": "2026-11-15T01:30:45Z",
+      "checked_at": "2026-11-15T04:41:07Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -225,7 +225,7 @@
     },
     "http://stream.rcs.revma.com/drakdf8mtd3vv": {
       "url": "http://stream.rcs.revma.com/drakdf8mtd3vv",
-      "checked_at": "2026-11-15T01:30:45Z",
+      "checked_at": "2026-11-15T04:41:07Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 48000Hz",
@@ -236,7 +236,7 @@
     },
     "http://stream.rcs.revma.com/drakdf8mtd3vv/hls.m3u8": {
       "url": "http://stream.rcs.revma.com/drakdf8mtd3vv/hls.m3u8",
-      "checked_at": "2026-11-15T01:30:45Z",
+      "checked_at": "2026-11-15T04:41:07Z",
       "http_status": 200,
       "content_type": "application/vnd.apple.mpegurl; charset=utf-8",
       "codec": "aac (HE-AAC) 48000Hz",
@@ -247,7 +247,7 @@
     },
     "http://stream.rcs.revma.com/hc3unrtbv4uvv": {
       "url": "http://stream.rcs.revma.com/hc3unrtbv4uvv",
-      "checked_at": "2026-11-15T01:30:46Z",
+      "checked_at": "2026-11-15T04:41:08Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -258,7 +258,7 @@
     },
     "http://stream.rcs.revma.com/hc3unrtbv4uvv/hls.m3u8": {
       "url": "http://stream.rcs.revma.com/hc3unrtbv4uvv/hls.m3u8",
-      "checked_at": "2026-11-15T01:30:46Z",
+      "checked_at": "2026-11-15T04:41:10Z",
       "http_status": 200,
       "content_type": "application/vnd.apple.mpegurl; charset=utf-8",
       "codec": "aac (HE-AAC) 44100Hz",
@@ -269,7 +269,7 @@
     },
     "http://stream.rcs.revma.com/kz3pdu9wz2nwv": {
       "url": "http://stream.rcs.revma.com/kz3pdu9wz2nwv",
-      "checked_at": "2026-11-15T01:30:46Z",
+      "checked_at": "2026-11-15T04:41:11Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -280,7 +280,7 @@
     },
     "http://stream.rcs.revma.com/kz3pdu9wz2nwv/hls.m3u8": {
       "url": "http://stream.rcs.revma.com/kz3pdu9wz2nwv/hls.m3u8",
-      "checked_at": "2026-11-15T01:30:47Z",
+      "checked_at": "2026-11-15T04:41:12Z",
       "http_status": 200,
       "content_type": "application/vnd.apple.mpegurl; charset=utf-8",
       "codec": "aac (HE-AAC) 44100Hz",
@@ -291,7 +291,7 @@
     },
     "http://stream.rcs.revma.com/q17aka9mtd3vv": {
       "url": "http://stream.rcs.revma.com/q17aka9mtd3vv",
-      "checked_at": "2026-11-15T01:30:48Z",
+      "checked_at": "2026-11-15T04:41:12Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 48000Hz",
@@ -302,7 +302,7 @@
     },
     "http://stream.rcs.revma.com/qp0xrd9mtd3vv": {
       "url": "http://stream.rcs.revma.com/qp0xrd9mtd3vv",
-      "checked_at": "2026-11-15T01:30:49Z",
+      "checked_at": "2026-11-15T04:41:12Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 48000Hz",
@@ -313,7 +313,7 @@
     },
     "http://stream.rcs.revma.com/v5pq3htbv4uvv": {
       "url": "http://stream.rcs.revma.com/v5pq3htbv4uvv",
-      "checked_at": "2026-11-15T01:30:50Z",
+      "checked_at": "2026-11-15T04:41:13Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -324,7 +324,7 @@
     },
     "http://stream.rcs.revma.com/v5pq3htbv4uvv/hls.m3u8": {
       "url": "http://stream.rcs.revma.com/v5pq3htbv4uvv/hls.m3u8",
-      "checked_at": "2026-11-15T01:30:51Z",
+      "checked_at": "2026-11-15T04:41:13Z",
       "http_status": 200,
       "content_type": "application/vnd.apple.mpegurl; charset=utf-8",
       "codec": "aac (HE-AAC) 44100Hz",
@@ -335,7 +335,7 @@
     },
     "http://stream.rcs.revma.com/xt9nhzsbv4uvv": {
       "url": "http://stream.rcs.revma.com/xt9nhzsbv4uvv",
-      "checked_at": "2026-11-15T01:30:52Z",
+      "checked_at": "2026-11-15T04:41:14Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -346,7 +346,7 @@
     },
     "http://stream.tujuh.my/proxy/rpmfm/stream": {
       "url": "http://stream.tujuh.my/proxy/rpmfm/stream",
-      "checked_at": "2026-11-15T01:30:52Z",
+      "checked_at": "2026-11-15T04:41:14Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 48000Hz",
@@ -357,7 +357,7 @@
     },
     "http://www.kcfm.org:8000/stream": {
       "url": "http://www.kcfm.org:8000/stream",
-      "checked_at": "2026-11-15T01:30:52Z",
+      "checked_at": "2026-11-15T04:41:15Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -368,7 +368,7 @@
     },
     "https://22253.live.streamtheworld.com/BFM_SC": {
       "url": "https://22253.live.streamtheworld.com/BFM_SC",
-      "checked_at": "2026-11-15T01:30:54Z",
+      "checked_at": "2026-11-15T04:41:16Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -379,7 +379,7 @@
     },
     "https://28103.live.streamtheworld.com/988_FMAAC.aac": {
       "url": "https://28103.live.streamtheworld.com/988_FMAAC.aac",
-      "checked_at": "2026-11-15T01:30:54Z",
+      "checked_at": "2026-11-15T04:41:17Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -390,7 +390,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/988_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/988_FMAAC.aac",
-      "checked_at": "2026-11-15T01:30:55Z",
+      "checked_at": "2026-11-15T04:41:19Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -401,7 +401,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/AI_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AI_FM.mp3",
-      "checked_at": "2026-11-15T01:30:58Z",
+      "checked_at": "2026-11-15T04:41:20Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -412,7 +412,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/AI_FMAAC_SC": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AI_FMAAC_SC",
-      "checked_at": "2026-11-15T01:30:58Z",
+      "checked_at": "2026-11-15T04:41:21Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -423,7 +423,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/ASYIK_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ASYIK_FM.mp3",
-      "checked_at": "2026-11-15T01:30:59Z",
+      "checked_at": "2026-11-15T04:41:21Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -434,7 +434,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/BFM_SC": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BFM_SC",
-      "checked_at": "2026-11-15T01:31:00Z",
+      "checked_at": "2026-11-15T04:41:22Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -445,7 +445,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/BINTULU_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BINTULU_FM.mp3",
-      "checked_at": "2026-11-15T01:31:02Z",
+      "checked_at": "2026-11-15T04:41:23Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -456,7 +456,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/JOHOR_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/JOHOR_FM.mp3",
-      "checked_at": "2026-11-15T01:31:02Z",
+      "checked_at": "2026-11-15T04:41:23Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -467,7 +467,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/JOHOR_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/JOHOR_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:03Z",
+      "checked_at": "2026-11-15T04:41:24Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -478,7 +478,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/KEDAH_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KEDAH_FM.mp3",
-      "checked_at": "2026-11-15T01:31:03Z",
+      "checked_at": "2026-11-15T04:41:25Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -489,7 +489,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/KEDAH_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KEDAH_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:04Z",
+      "checked_at": "2026-11-15T04:41:25Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -500,7 +500,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/KELANTAN_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KELANTAN_FM.mp3",
-      "checked_at": "2026-11-15T01:31:05Z",
+      "checked_at": "2026-11-15T04:41:26Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -511,7 +511,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/KELANTAN_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KELANTAN_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:05Z",
+      "checked_at": "2026-11-15T04:41:27Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -522,7 +522,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/KENINGAU_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KENINGAU_FM.mp3",
-      "checked_at": "2026-11-15T01:31:06Z",
+      "checked_at": "2026-11-15T04:41:27Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -533,7 +533,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/KL_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KL_FM.mp3",
-      "checked_at": "2026-11-15T01:31:06Z",
+      "checked_at": "2026-11-15T04:41:28Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -544,7 +544,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/KL_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KL_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:07Z",
+      "checked_at": "2026-11-15T04:41:29Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -555,7 +555,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/LABUAN_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LABUAN_FM.mp3",
-      "checked_at": "2026-11-15T01:31:07Z",
+      "checked_at": "2026-11-15T04:41:29Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -566,7 +566,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/LABUAN_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LABUAN_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:07Z",
+      "checked_at": "2026-11-15T04:41:29Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -577,7 +577,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/LANGKAWI_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LANGKAWI_FM.mp3",
-      "checked_at": "2026-11-15T01:31:07Z",
+      "checked_at": "2026-11-15T04:41:30Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -588,7 +588,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/MELAKA_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MELAKA_FM.mp3",
-      "checked_at": "2026-11-15T01:31:08Z",
+      "checked_at": "2026-11-15T04:41:30Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -599,7 +599,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/MELAKA_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MELAKA_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:09Z",
+      "checked_at": "2026-11-15T04:41:31Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -610,7 +610,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/MINNAL_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MINNAL_FM.mp3",
-      "checked_at": "2026-11-15T01:31:10Z",
+      "checked_at": "2026-11-15T04:41:31Z",
       "http_status": 404,
       "content_type": "text/html",
       "status": "failed",
@@ -618,7 +618,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/MINNAL_FMAAC_SC": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MINNAL_FMAAC_SC",
-      "checked_at": "2026-11-15T01:31:10Z",
+      "checked_at": "2026-11-15T04:41:32Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -629,7 +629,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/MIRI_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MIRI_FM.mp3",
-      "checked_at": "2026-11-15T01:31:10Z",
+      "checked_at": "2026-11-15T04:41:32Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -640,7 +640,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/MUTIARA_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MUTIARA_FM.mp3",
-      "checked_at": "2026-11-15T01:31:10Z",
+      "checked_at": "2026-11-15T04:41:33Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -651,7 +651,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/MUTIARA_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MUTIARA_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:11Z",
+      "checked_at": "2026-11-15T04:41:33Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -662,7 +662,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/NASIONAL_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NASIONAL_FM.mp3",
-      "checked_at": "2026-11-15T01:31:11Z",
+      "checked_at": "2026-11-15T04:41:33Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -673,7 +673,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/NASIONAL_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NASIONAL_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:11Z",
+      "checked_at": "2026-11-15T04:41:34Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -684,7 +684,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/NEGERI_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NEGERI_FM.mp3",
-      "checked_at": "2026-11-15T01:31:12Z",
+      "checked_at": "2026-11-15T04:41:34Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -695,7 +695,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/NEGERI_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NEGERI_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:12Z",
+      "checked_at": "2026-11-15T04:41:35Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -706,7 +706,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/PAHANG_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PAHANG_FM.mp3",
-      "checked_at": "2026-11-15T01:31:13Z",
+      "checked_at": "2026-11-15T04:41:35Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -717,7 +717,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/PAHANG_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PAHANG_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:13Z",
+      "checked_at": "2026-11-15T04:41:35Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -728,7 +728,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/PERAK_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PERAK_FM.mp3",
-      "checked_at": "2026-11-15T01:31:14Z",
+      "checked_at": "2026-11-15T04:41:37Z",
       "http_status": 404,
       "content_type": "text/html",
       "status": "failed",
@@ -736,7 +736,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/PERAK_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PERAK_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:14Z",
+      "checked_at": "2026-11-15T04:41:37Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -747,7 +747,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/PERLIS_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PERLIS_FM.mp3",
-      "checked_at": "2026-11-15T01:31:14Z",
+      "checked_at": "2026-11-15T04:41:37Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -758,7 +758,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/PERLIS_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PERLIS_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:14Z",
+      "checked_at": "2026-11-15T04:41:38Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -769,7 +769,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_KLASIK.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_KLASIK.mp3",
-      "checked_at": "2026-11-15T01:31:14Z",
+      "checked_at": "2026-11-15T04:41:38Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -780,7 +780,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_KLASIKAAC_SC": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_KLASIKAAC_SC",
-      "checked_at": "2026-11-15T01:31:15Z",
+      "checked_at": "2026-11-15T04:41:38Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -791,7 +791,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/RAKITAAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RAKITAAAC.aac",
-      "checked_at": "2026-11-15T01:31:15Z",
+      "checked_at": "2026-11-15T04:41:39Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -802,7 +802,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/RED_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RED_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:16Z",
+      "checked_at": "2026-11-15T04:41:39Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -813,7 +813,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/SABAH_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SABAH_FM.mp3",
-      "checked_at": "2026-11-15T01:31:16Z",
+      "checked_at": "2026-11-15T04:41:39Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -824,7 +824,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/SABAH_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SABAH_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:17Z",
+      "checked_at": "2026-11-15T04:41:40Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -835,7 +835,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/SABAH_VFM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SABAH_VFM.mp3",
-      "checked_at": "2026-11-15T01:31:17Z",
+      "checked_at": "2026-11-15T04:41:41Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -846,7 +846,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/SABAH_VFMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SABAH_VFMAAC.aac",
-      "checked_at": "2026-11-15T01:31:17Z",
+      "checked_at": "2026-11-15T04:41:42Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -857,7 +857,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/SANDAKAN_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SANDAKAN_FM.mp3",
-      "checked_at": "2026-11-15T01:31:18Z",
+      "checked_at": "2026-11-15T04:41:42Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -868,7 +868,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/SARAWAK_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SARAWAK_FM.mp3",
-      "checked_at": "2026-11-15T01:31:18Z",
+      "checked_at": "2026-11-15T04:41:42Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -879,7 +879,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/SARAWAK_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SARAWAK_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:20Z",
+      "checked_at": "2026-11-15T04:41:42Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -890,7 +890,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/SELANGOR_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SELANGOR_FM.mp3",
-      "checked_at": "2026-11-15T01:31:20Z",
+      "checked_at": "2026-11-15T04:41:43Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -901,7 +901,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/SELANGOR_FMAAC.aac": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SELANGOR_FMAAC.aac",
-      "checked_at": "2026-11-15T01:31:20Z",
+      "checked_at": "2026-11-15T04:41:44Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -912,18 +912,15 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/SIBU_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SIBU_FM.mp3",
-      "checked_at": "2026-11-15T01:31:21Z",
-      "http_status": 200,
-      "content_type": "audio/mpeg",
-      "codec": "mp3 (mp3float) 44100Hz",
-      "decoded_seconds": 10.0,
-      "status": "verified",
-      "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
-      "codec_format": "mp3"
+      "checked_at": "2026-11-15T04:41:45Z",
+      "http_status": 404,
+      "content_type": "text/html",
+      "status": "failed",
+      "detail": "HTTP 404"
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/TAWAU_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TAWAU_FM.mp3",
-      "checked_at": "2026-11-15T01:31:21Z",
+      "checked_at": "2026-11-15T04:41:45Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -934,29 +931,23 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/TERENGGANU_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TERENGGANU_FM.mp3",
-      "checked_at": "2026-11-15T01:31:21Z",
-      "http_status": 200,
-      "content_type": "audio/mpeg",
-      "codec": "mp3 (mp3float) 44100Hz",
-      "decoded_seconds": 10.0,
-      "status": "verified",
-      "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
-      "codec_format": "mp3"
+      "checked_at": "2026-11-15T04:41:45Z",
+      "http_status": 404,
+      "content_type": "text/html",
+      "status": "failed",
+      "detail": "HTTP 404"
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/TERENGGANU_FMAAC_SC": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TERENGGANU_FMAAC_SC",
-      "checked_at": "2026-11-15T01:31:21Z",
-      "http_status": 200,
-      "content_type": "audio/aacp",
-      "codec": "aac (LC) 44100Hz",
-      "decoded_seconds": 10.0,
-      "status": "verified",
-      "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
-      "codec_format": "aac"
+      "checked_at": "2026-11-15T04:41:45Z",
+      "http_status": 404,
+      "content_type": "text/html",
+      "status": "failed",
+      "detail": "HTTP 404"
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/TRAXX_FM.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TRAXX_FM.mp3",
-      "checked_at": "2026-11-15T01:31:21Z",
+      "checked_at": "2026-11-15T04:41:46Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -967,7 +958,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/TRAXX_FMAAC_SC": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TRAXX_FMAAC_SC",
-      "checked_at": "2026-11-15T01:31:23Z",
+      "checked_at": "2026-11-15T04:41:46Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -978,7 +969,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/WAI_FM_BK.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WAI_FM_BK.mp3",
-      "checked_at": "2026-11-15T01:31:24Z",
+      "checked_at": "2026-11-15T04:41:46Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -989,7 +980,7 @@
     },
     "https://playerservices.streamtheworld.com/api/livestream-redirect/WAI_FM_IBAN.mp3": {
       "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WAI_FM_IBAN.mp3",
-      "checked_at": "2026-11-15T01:31:24Z",
+      "checked_at": "2026-11-15T04:41:46Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -1000,7 +991,7 @@
     },
     "https://radiorosak.radioca.st/stream": {
       "url": "https://radiorosak.radioca.st/stream",
-      "checked_at": "2026-11-15T01:31:24Z",
+      "checked_at": "2026-11-15T04:41:46Z",
       "http_status": 200,
       "content_type": "audio/aacp",
       "codec": "aac (LC) 44100Hz",
@@ -1011,7 +1002,7 @@
     },
     "https://stayfm.com:8443/archive": {
       "url": "https://stayfm.com:8443/archive",
-      "checked_at": "2026-11-15T01:31:24Z",
+      "checked_at": "2026-11-15T04:41:46Z",
       "http_status": 200,
       "content_type": "audio/mpeg",
       "codec": "mp3 (mp3float) 44100Hz",
@@ -1022,7 +1013,7 @@
     },
     "https://stream.rcs.revma.com/1ut6qwtbv4uvv": {
       "url": "https://stream.rcs.revma.com/1ut6qwtbv4uvv",
-      "checked_at": "2026-11-15T01:31:24Z",
+      "checked_at": "2026-11-15T04:41:48Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -1033,7 +1024,7 @@
     },
     "https://stream.rcs.revma.com/2u1n6dtbv4uvv": {
       "url": "https://stream.rcs.revma.com/2u1n6dtbv4uvv",
-      "checked_at": "2026-11-15T01:31:25Z",
+      "checked_at": "2026-11-15T04:41:49Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -1044,7 +1035,7 @@
     },
     "https://stream.rcs.revma.com/2u1n6dtbv4uvv/hls.m3u8": {
       "url": "https://stream.rcs.revma.com/2u1n6dtbv4uvv/hls.m3u8",
-      "checked_at": "2026-11-15T01:31:25Z",
+      "checked_at": "2026-11-15T04:41:49Z",
       "http_status": 200,
       "content_type": "application/vnd.apple.mpegurl; charset=utf-8",
       "codec": "aac (HE-AAC) 44100Hz",
@@ -1055,7 +1046,7 @@
     },
     "https://stream.rcs.revma.com/3930238mtd3vv": {
       "url": "https://stream.rcs.revma.com/3930238mtd3vv",
-      "checked_at": "2026-11-15T01:31:27Z",
+      "checked_at": "2026-11-15T04:41:49Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 48000Hz",
@@ -1066,7 +1057,7 @@
     },
     "https://stream.rcs.revma.com/3930238mtd3vv/hls.m3u8": {
       "url": "https://stream.rcs.revma.com/3930238mtd3vv/hls.m3u8",
-      "checked_at": "2026-11-15T01:31:27Z",
+      "checked_at": "2026-11-15T04:41:49Z",
       "http_status": 200,
       "content_type": "application/vnd.apple.mpegurl; charset=utf-8",
       "codec": "aac (HE-AAC) 48000Hz",
@@ -1077,7 +1068,7 @@
     },
     "https://stream.rcs.revma.com/488kt4sbv4uvv": {
       "url": "https://stream.rcs.revma.com/488kt4sbv4uvv",
-      "checked_at": "2026-11-15T01:31:28Z",
+      "checked_at": "2026-11-15T04:41:50Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -1088,7 +1079,7 @@
     },
     "https://stream.rcs.revma.com/51qe53rv0y3vv.m4a": {
       "url": "https://stream.rcs.revma.com/51qe53rv0y3vv.m4a",
-      "checked_at": "2026-11-15T01:31:28Z",
+      "checked_at": "2026-11-15T04:41:50Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -1099,7 +1090,7 @@
     },
     "https://stream.rcs.revma.com/7ww2a4tbv4uvv": {
       "url": "https://stream.rcs.revma.com/7ww2a4tbv4uvv",
-      "checked_at": "2026-11-15T01:31:28Z",
+      "checked_at": "2026-11-15T04:41:50Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -1110,7 +1101,7 @@
     },
     "https://stream.rcs.revma.com/7x3gv2y4bshvv": {
       "url": "https://stream.rcs.revma.com/7x3gv2y4bshvv",
-      "checked_at": "2026-11-15T01:31:28Z",
+      "checked_at": "2026-11-15T04:41:51Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -1121,7 +1112,7 @@
     },
     "https://stream.rcs.revma.com/8150ezy4bshvv": {
       "url": "https://stream.rcs.revma.com/8150ezy4bshvv",
-      "checked_at": "2026-11-15T01:31:30Z",
+      "checked_at": "2026-11-15T04:41:51Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -1132,7 +1123,7 @@
     },
     "https://stream.rcs.revma.com/9ykdmcawe1bwv": {
       "url": "https://stream.rcs.revma.com/9ykdmcawe1bwv",
-      "checked_at": "2026-11-15T01:31:33Z",
+      "checked_at": "2026-11-15T04:41:52Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 48000Hz",
@@ -1143,7 +1134,7 @@
     },
     "https://stream.rcs.revma.com/azatk0tbv4uvv": {
       "url": "https://stream.rcs.revma.com/azatk0tbv4uvv",
-      "checked_at": "2026-11-15T01:31:33Z",
+      "checked_at": "2026-11-15T04:41:56Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -1154,7 +1145,7 @@
     },
     "https://stream.rcs.revma.com/bn4ex8sbv4uvv": {
       "url": "https://stream.rcs.revma.com/bn4ex8sbv4uvv",
-      "checked_at": "2026-11-15T01:31:34Z",
+      "checked_at": "2026-11-15T04:41:56Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -1165,7 +1156,7 @@
     },
     "https://stream.rcs.revma.com/drakdf8mtd3vv": {
       "url": "https://stream.rcs.revma.com/drakdf8mtd3vv",
-      "checked_at": "2026-11-15T01:31:34Z",
+      "checked_at": "2026-11-15T04:41:58Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 48000Hz",
@@ -1176,7 +1167,7 @@
     },
     "https://stream.rcs.revma.com/drakdf8mtd3vv/hls.m3u8": {
       "url": "https://stream.rcs.revma.com/drakdf8mtd3vv/hls.m3u8",
-      "checked_at": "2026-11-15T01:31:35Z",
+      "checked_at": "2026-11-15T04:41:58Z",
       "http_status": 200,
       "content_type": "application/vnd.apple.mpegurl; charset=utf-8",
       "codec": "aac (HE-AAC) 48000Hz",
@@ -1187,7 +1178,7 @@
     },
     "https://stream.rcs.revma.com/hc3unrtbv4uvv": {
       "url": "https://stream.rcs.revma.com/hc3unrtbv4uvv",
-      "checked_at": "2026-11-15T01:31:35Z",
+      "checked_at": "2026-11-15T04:41:58Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -1198,7 +1189,7 @@
     },
     "https://stream.rcs.revma.com/hc3unrtbv4uvv/hls.m3u8": {
       "url": "https://stream.rcs.revma.com/hc3unrtbv4uvv/hls.m3u8",
-      "checked_at": "2026-11-15T01:31:36Z",
+      "checked_at": "2026-11-15T04:41:59Z",
       "http_status": 200,
       "content_type": "application/vnd.apple.mpegurl; charset=utf-8",
       "codec": "aac (HE-AAC) 44100Hz",
@@ -1209,7 +1200,7 @@
     },
     "https://stream.rcs.revma.com/kz3pdu9wz2nwv": {
       "url": "https://stream.rcs.revma.com/kz3pdu9wz2nwv",
-      "checked_at": "2026-11-15T01:31:37Z",
+      "checked_at": "2026-11-15T04:42:00Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -1220,7 +1211,7 @@
     },
     "https://stream.rcs.revma.com/kz3pdu9wz2nwv/hls.m3u8": {
       "url": "https://stream.rcs.revma.com/kz3pdu9wz2nwv/hls.m3u8",
-      "checked_at": "2026-11-15T01:31:37Z",
+      "checked_at": "2026-11-15T04:42:02Z",
       "http_status": 200,
       "content_type": "application/vnd.apple.mpegurl; charset=utf-8",
       "codec": "aac (HE-AAC) 44100Hz",
@@ -1231,7 +1222,7 @@
     },
     "https://stream.rcs.revma.com/q17aka9mtd3vv": {
       "url": "https://stream.rcs.revma.com/q17aka9mtd3vv",
-      "checked_at": "2026-11-15T01:31:37Z",
+      "checked_at": "2026-11-15T04:42:02Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 48000Hz",
@@ -1242,7 +1233,7 @@
     },
     "https://stream.rcs.revma.com/qp0xrd9mtd3vv": {
       "url": "https://stream.rcs.revma.com/qp0xrd9mtd3vv",
-      "checked_at": "2026-11-15T01:31:39Z",
+      "checked_at": "2026-11-15T04:42:02Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 48000Hz",
@@ -1253,7 +1244,7 @@
     },
     "https://stream.rcs.revma.com/v5pq3htbv4uvv": {
       "url": "https://stream.rcs.revma.com/v5pq3htbv4uvv",
-      "checked_at": "2026-11-15T01:31:41Z",
+      "checked_at": "2026-11-15T04:42:03Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -1264,7 +1255,7 @@
     },
     "https://stream.rcs.revma.com/v5pq3htbv4uvv/hls.m3u8": {
       "url": "https://stream.rcs.revma.com/v5pq3htbv4uvv/hls.m3u8",
-      "checked_at": "2026-11-15T01:31:42Z",
+      "checked_at": "2026-11-15T04:42:03Z",
       "http_status": 200,
       "content_type": "application/vnd.apple.mpegurl; charset=utf-8",
       "codec": "aac (HE-AAC) 44100Hz",
@@ -1275,7 +1266,7 @@
     },
     "https://stream.rcs.revma.com/xt9nhzsbv4uvv": {
       "url": "https://stream.rcs.revma.com/xt9nhzsbv4uvv",
-      "checked_at": "2026-11-15T01:31:42Z",
+      "checked_at": "2026-11-15T04:42:04Z",
       "http_status": 200,
       "content_type": "audio/aac",
       "codec": "aac (LC) 44100Hz",
@@ -1323,8 +1314,8 @@
     },
     "https://audio1.syok.my/sinar": {
       "url": "https://audio1.syok.my/sinar",
-      "http_status": 200,
-      "error": null
+      "http_status": 500,
+      "error": "HTTP 500"
     },
     "https://cityplusfm.my/": {
       "url": "https://cityplusfm.my/",
@@ -1413,13 +1404,13 @@
     },
     "https://www.988.com.my/": {
       "url": "https://www.988.com.my/",
-      "http_status": 200,
-      "error": null
+      "http_status": 403,
+      "error": "HTTP 403"
     },
     "https://www.988.com.my/wp-content/themes/988_web/assets/988-logo.png": {
       "url": "https://www.988.com.my/wp-content/themes/988_web/assets/988-logo.png",
-      "http_status": 200,
-      "error": null
+      "http_status": 403,
+      "error": "HTTP 403"
     },
     "https://www.bfm.my/": {
       "url": "https://www.bfm.my/",
@@ -1465,91 +1456,6 @@
       "url": "https://zayan.syok.my/",
       "http_status": 200,
       "error": null
-    },
-    "http://radiorosak.com/": {
-      "url": "http://radiorosak.com/",
-      "http_status": null,
-      "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
-    },
-    "http://www.wheelerzradio.net/": {
-      "url": "http://www.wheelerzradio.net/",
-      "http_status": null,
-      "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
-    },
-    "https://aifm.rtm.gov.my/": {
-      "url": "https://aifm.rtm.gov.my/",
-      "http_status": null,
-      "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
-    },
-    "https://assets-mpa.eight.audio/media/Logo/logo-eight-wu-xian-1000x1000-09.jpg": {
-      "url": "https://assets-mpa.eight.audio/media/Logo/logo-eight-wu-xian-1000x1000-09.jpg",
-      "http_status": 403,
-      "error": "HTTP 403"
-    },
-    "https://assets-mpa.flyfm.audio/media/Logo/profile_photo_1000x1000-04.jpg": {
-      "url": "https://assets-mpa.flyfm.audio/media/Logo/profile_photo_1000x1000-04.jpg",
-      "http_status": 403,
-      "error": "HTTP 403"
-    },
-    "https://assets-mpa.hotfm.audio/media/Logo/profile_photo_1000x1000-01_v2.jpg": {
-      "url": "https://assets-mpa.hotfm.audio/media/Logo/profile_photo_1000x1000-01_v2.jpg",
-      "http_status": 403,
-      "error": "HTTP 403"
-    },
-    "https://asyikfm.rtm.gov.my/": {
-      "url": "https://asyikfm.rtm.gov.my/",
-      "http_status": null,
-      "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
-    },
-    "https://kelantanfm.rtm.gov.my/": {
-      "url": "https://kelantanfm.rtm.gov.my/",
-      "http_status": null,
-      "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
-    },
-    "https://keningaufm.rtm.gov.my/": {
-      "url": "https://keningaufm.rtm.gov.my/",
-      "http_status": null,
-      "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
-    },
-    "https://langkawifm.rtm.gov.my/": {
-      "url": "https://langkawifm.rtm.gov.my/",
-      "http_status": null,
-      "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
-    },
-    "https://minnalfm.rtm.gov.my/": {
-      "url": "https://minnalfm.rtm.gov.my/",
-      "http_status": null,
-      "error": "URLError: <urlopen error timed out>"
-    },
-    "https://nasionalfm.rtm.gov.my/": {
-      "url": "https://nasionalfm.rtm.gov.my/",
-      "http_status": null,
-      "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
-    },
-    "https://radioklasik.rtm.gov.my/": {
-      "url": "https://radioklasik.rtm.gov.my/",
-      "http_status": null,
-      "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
-    },
-    "https://sabahfm.rtm.gov.my/": {
-      "url": "https://sabahfm.rtm.gov.my/",
-      "http_status": null,
-      "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
-    },
-    "https://terengganufm.rtm.gov.my/": {
-      "url": "https://terengganufm.rtm.gov.my/",
-      "http_status": null,
-      "error": "URLError: <urlopen error timed out>"
-    },
-    "https://traxxfm.rtm.gov.my/": {
-      "url": "https://traxxfm.rtm.gov.my/",
-      "http_status": null,
-      "error": "URLError: <urlopen error timed out>"
-    },
-    "https://waifmbidayuh.rtm.gov.my/": {
-      "url": "https://waifmbidayuh.rtm.gov.my/",
-      "http_status": null,
-      "error": "URLError: <urlopen error timed out>"
     }
   }
 }

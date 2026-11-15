@@ -1,6 +1,6 @@
 # Laporan Pengesahan Strim / Stream Verification Report
 
-Diperiksa: `2026-11-15T01:31:42Z` (runner: github-actions, GitHub Actions ubuntu-latest).
+Diperiksa: `2026-11-15T04:42:04Z` (runner: github-actions, GitHub Actions ubuntu-latest).
 
 Kaedah: setiap URL dimuat turun dan **ffmpeg mesti menyahkod sekurang-kurangnya 6 saat audio sebenar**. HTTP 200 sahaja tidak dikira berjaya.
 
@@ -113,13 +113,13 @@ Kaedah: setiap URL dimuat turun dan **ffmpeg mesti menyahkod sekurang-kurangnya 
 | Sarawak FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/SARAWAK_FMAAC.aac` |
 | Selangor FM | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/SELANGOR_FM.mp3` |
 | Selangor FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/SELANGOR_FMAAC.aac` |
-| Sibu FM | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/SIBU_FM.mp3` |
+| Sibu FM | mp3 | ❌ gagal | HTTP 404 | `https://playerservices.streamtheworld.com/api/livestream-redirect/SIBU_FM.mp3` |
 | Sinar | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://stream.rcs.revma.com/azatk0tbv4uvv` |
 | Sinar | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `http://stream.rcs.revma.com/azatk0tbv4uvv` |
 | Stay.FM | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://stayfm.com:8443/archive` |
 | Tawau FM | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/TAWAU_FM.mp3` |
-| Terengganu FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/TERENGGANU_FMAAC_SC` |
-| Terengganu FM | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/TERENGGANU_FM.mp3` |
+| Terengganu FM | aac | ❌ gagal | HTTP 404 | `https://playerservices.streamtheworld.com/api/livestream-redirect/TERENGGANU_FMAAC_SC` |
+| Terengganu FM | mp3 | ❌ gagal | HTTP 404 | `https://playerservices.streamtheworld.com/api/livestream-redirect/TERENGGANU_FM.mp3` |
 | TraXX FM | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/TRAXX_FMAAC_SC` |
 | TraXX FM | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/TRAXX_FM.mp3` |
 | WAI FM Bidayuh | mp3 | ✅ disahkan | 10s audio dinyahkod (mp3 (mp3float) 44100Hz) | `https://playerservices.streamtheworld.com/api/livestream-redirect/WAI_FM_BK.mp3` |
@@ -128,4 +128,4 @@ Kaedah: setiap URL dimuat turun dan **ffmpeg mesti menyahkod sekurang-kurangnya 
 | Zayan | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `https://stream.rcs.revma.com/7ww2a4tbv4uvv` |
 | Zayan | aac | ✅ disahkan | 10s audio dinyahkod (aac (LC) 44100Hz) | `http://stream.rcs.revma.com/7ww2a4tbv4uvv` |
 
-**Jumlah URL strim: 117, disahkan: 115, gagal: 2, belum diuji: 0.**
+**Jumlah URL strim: 117, disahkan: 112, gagal: 5, belum diuji: 0.**

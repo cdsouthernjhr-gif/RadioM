@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": 2,
-  "last_updated": "2026-11-15T01:48:12Z",
-  "verification_checked_at": "2026-11-15T01:31:42Z",
+  "version": 3,
+  "last_updated": "2026-11-15T05:12:15Z",
+  "verification_checked_at": "2026-11-15T04:42:04Z",
   "source": "https://github.com/cdsouthernjhr-gif/RadioM",
   "stations": [
     {
@@ -28,7 +28,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:55Z",
+            "checked_at": "2026-11-15T04:41:19Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -39,7 +39,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:54Z",
+            "checked_at": "2026-11-15T04:41:17Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -66,7 +66,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:28Z",
+            "checked_at": "2026-11-15T04:41:51Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -76,7 +76,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:40Z",
+            "checked_at": "2026-11-15T04:41:01Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -105,7 +105,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:30Z",
+            "checked_at": "2026-11-15T04:41:51Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -115,7 +115,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:40Z",
+            "checked_at": "2026-11-15T04:41:01Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -157,7 +157,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:58Z",
+            "checked_at": "2026-11-15T04:41:21Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -168,7 +168,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:58Z",
+            "checked_at": "2026-11-15T04:41:20Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -192,7 +192,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:35Z",
+            "checked_at": "2026-11-15T04:40:57Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -230,7 +230,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:59Z",
+            "checked_at": "2026-11-15T04:41:21Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -263,7 +263,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:54Z",
+            "checked_at": "2026-11-15T04:41:16Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -274,7 +274,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:00Z",
+            "checked_at": "2026-11-15T04:41:22Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -306,7 +306,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:02Z",
+            "checked_at": "2026-11-15T04:41:23Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -332,7 +332,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:28Z",
+            "checked_at": "2026-11-15T04:41:50Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -342,7 +342,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:39Z",
+            "checked_at": "2026-11-15T04:41:01Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -370,7 +370,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:35Z",
+            "checked_at": "2026-11-15T04:40:57Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
@@ -399,7 +399,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:33Z",
+            "checked_at": "2026-11-15T04:41:52Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
@@ -409,7 +409,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:43Z",
+            "checked_at": "2026-11-15T04:41:05Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
@@ -438,7 +438,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:39Z",
+            "checked_at": "2026-11-15T04:42:02Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
@@ -448,7 +448,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:49Z",
+            "checked_at": "2026-11-15T04:41:12Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
@@ -506,7 +506,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:37Z",
+            "checked_at": "2026-11-15T04:42:02Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
@@ -516,7 +516,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:48Z",
+            "checked_at": "2026-11-15T04:41:12Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
@@ -563,7 +563,7 @@
           "bitrate": 128,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:35Z",
+            "checked_at": "2026-11-15T04:40:57Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -593,7 +593,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:42Z",
+            "checked_at": "2026-11-15T04:42:04Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -604,7 +604,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:15Z",
+            "checked_at": "2026-11-15T04:41:39Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -614,7 +614,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:52Z",
+            "checked_at": "2026-11-15T04:41:14Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -649,7 +649,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:28Z",
+            "checked_at": "2026-11-15T04:41:50Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -659,7 +659,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:38Z",
+            "checked_at": "2026-11-15T04:41:00Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -693,7 +693,7 @@
           "format": "hls",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:35Z",
+            "checked_at": "2026-11-15T04:41:58Z",
             "detail": "10s audio dinyahkod (aac (HE-AAC) 48000Hz)",
             "codec": "aac (HE-AAC) 48000Hz"
           }
@@ -703,7 +703,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:34Z",
+            "checked_at": "2026-11-15T04:41:58Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
@@ -713,7 +713,7 @@
           "format": "hls",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:45Z",
+            "checked_at": "2026-11-15T04:41:07Z",
             "detail": "10s audio dinyahkod (aac (HE-AAC) 48000Hz)",
             "codec": "aac (HE-AAC) 48000Hz"
           }
@@ -723,7 +723,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:45Z",
+            "checked_at": "2026-11-15T04:41:07Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
@@ -757,7 +757,7 @@
           "format": "hls",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:37Z",
+            "checked_at": "2026-11-15T04:42:02Z",
             "detail": "10s audio dinyahkod (aac (HE-AAC) 44100Hz)",
             "codec": "aac (HE-AAC) 44100Hz"
           }
@@ -767,7 +767,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:37Z",
+            "checked_at": "2026-11-15T04:42:00Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -777,7 +777,7 @@
           "format": "hls",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:47Z",
+            "checked_at": "2026-11-15T04:41:12Z",
             "detail": "10s audio dinyahkod (aac (HE-AAC) 44100Hz)",
             "codec": "aac (HE-AAC) 44100Hz"
           }
@@ -787,7 +787,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:46Z",
+            "checked_at": "2026-11-15T04:41:11Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -820,7 +820,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:02Z",
+            "checked_at": "2026-11-15T04:41:23Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -831,7 +831,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:03Z",
+            "checked_at": "2026-11-15T04:41:24Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -857,7 +857,7 @@
           "bitrate": 128,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:52Z",
+            "checked_at": "2026-11-15T04:41:15Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -891,7 +891,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:03Z",
+            "checked_at": "2026-11-15T04:41:25Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -902,7 +902,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:04Z",
+            "checked_at": "2026-11-15T04:41:25Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -932,7 +932,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:05Z",
+            "checked_at": "2026-11-15T04:41:27Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -943,7 +943,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:05Z",
+            "checked_at": "2026-11-15T04:41:26Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -973,7 +973,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:06Z",
+            "checked_at": "2026-11-15T04:41:27Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -1008,7 +1008,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:06Z",
+            "checked_at": "2026-11-15T04:41:28Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -1019,7 +1019,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:07Z",
+            "checked_at": "2026-11-15T04:41:29Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1043,7 +1043,7 @@
           "format": "hls",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:27Z",
+            "checked_at": "2026-11-15T04:41:49Z",
             "detail": "10s audio dinyahkod (aac (HE-AAC) 48000Hz)",
             "codec": "aac (HE-AAC) 48000Hz"
           }
@@ -1053,7 +1053,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:27Z",
+            "checked_at": "2026-11-15T04:41:49Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
@@ -1063,7 +1063,7 @@
           "format": "hls",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:38Z",
+            "checked_at": "2026-11-15T04:41:00Z",
             "detail": "10s audio dinyahkod (aac (HE-AAC) 48000Hz)",
             "codec": "aac (HE-AAC) 48000Hz"
           }
@@ -1073,7 +1073,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:38Z",
+            "checked_at": "2026-11-15T04:41:00Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
@@ -1108,7 +1108,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:07Z",
+            "checked_at": "2026-11-15T04:41:29Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -1119,7 +1119,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:07Z",
+            "checked_at": "2026-11-15T04:41:29Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1149,7 +1149,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:07Z",
+            "checked_at": "2026-11-15T04:41:30Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -1180,7 +1180,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:34Z",
+            "checked_at": "2026-11-15T04:41:56Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1190,7 +1190,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:45Z",
+            "checked_at": "2026-11-15T04:41:07Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1219,7 +1219,7 @@
           "bitrate": 128,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:35Z",
+            "checked_at": "2026-11-15T04:40:57Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -1253,7 +1253,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:08Z",
+            "checked_at": "2026-11-15T04:41:30Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -1264,7 +1264,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:09Z",
+            "checked_at": "2026-11-15T04:41:31Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1294,7 +1294,7 @@
           "format": "hls",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:25Z",
+            "checked_at": "2026-11-15T04:41:49Z",
             "detail": "10s audio dinyahkod (aac (HE-AAC) 44100Hz)",
             "codec": "aac (HE-AAC) 44100Hz"
           }
@@ -1304,7 +1304,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:25Z",
+            "checked_at": "2026-11-15T04:41:49Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1314,7 +1314,7 @@
           "format": "hls",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:38Z",
+            "checked_at": "2026-11-15T04:40:59Z",
             "detail": "10s audio dinyahkod (aac (HE-AAC) 44100Hz)",
             "codec": "aac (HE-AAC) 44100Hz"
           }
@@ -1324,7 +1324,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:38Z",
+            "checked_at": "2026-11-15T04:40:59Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1365,7 +1365,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:10Z",
+            "checked_at": "2026-11-15T04:41:32Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1376,7 +1376,7 @@
           "bitrate": 96,
           "verification": {
             "status": "failed",
-            "checked_at": "2026-11-15T01:31:10Z",
+            "checked_at": "2026-11-15T04:41:31Z",
             "detail": "HTTP 404"
           }
         }
@@ -1405,7 +1405,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:10Z",
+            "checked_at": "2026-11-15T04:41:32Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -1435,7 +1435,7 @@
           "format": "hls",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:42Z",
+            "checked_at": "2026-11-15T04:42:03Z",
             "detail": "10s audio dinyahkod (aac (HE-AAC) 44100Hz)",
             "codec": "aac (HE-AAC) 44100Hz"
           }
@@ -1445,7 +1445,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:41Z",
+            "checked_at": "2026-11-15T04:42:03Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1455,7 +1455,7 @@
           "format": "hls",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:51Z",
+            "checked_at": "2026-11-15T04:41:13Z",
             "detail": "10s audio dinyahkod (aac (HE-AAC) 44100Hz)",
             "codec": "aac (HE-AAC) 44100Hz"
           }
@@ -1465,7 +1465,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:50Z",
+            "checked_at": "2026-11-15T04:41:13Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1499,7 +1499,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:10Z",
+            "checked_at": "2026-11-15T04:41:33Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -1510,7 +1510,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:11Z",
+            "checked_at": "2026-11-15T04:41:33Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1540,7 +1540,7 @@
           "format": "hls",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:36Z",
+            "checked_at": "2026-11-15T04:41:59Z",
             "detail": "10s audio dinyahkod (aac (HE-AAC) 44100Hz)",
             "codec": "aac (HE-AAC) 44100Hz"
           }
@@ -1550,7 +1550,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:35Z",
+            "checked_at": "2026-11-15T04:41:58Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1560,7 +1560,7 @@
           "format": "hls",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:46Z",
+            "checked_at": "2026-11-15T04:41:10Z",
             "detail": "10s audio dinyahkod (aac (HE-AAC) 44100Hz)",
             "codec": "aac (HE-AAC) 44100Hz"
           }
@@ -1570,7 +1570,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:46Z",
+            "checked_at": "2026-11-15T04:41:08Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1611,7 +1611,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:11Z",
+            "checked_at": "2026-11-15T04:41:33Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -1622,7 +1622,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:11Z",
+            "checked_at": "2026-11-15T04:41:34Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1649,7 +1649,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:35Z",
+            "checked_at": "2026-11-15T04:40:57Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
@@ -1683,7 +1683,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:12Z",
+            "checked_at": "2026-11-15T04:41:34Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -1694,7 +1694,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:12Z",
+            "checked_at": "2026-11-15T04:41:35Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1724,7 +1724,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:13Z",
+            "checked_at": "2026-11-15T04:41:35Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -1735,7 +1735,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:13Z",
+            "checked_at": "2026-11-15T04:41:35Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1765,7 +1765,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:14Z",
+            "checked_at": "2026-11-15T04:41:37Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1776,7 +1776,7 @@
           "bitrate": 96,
           "verification": {
             "status": "failed",
-            "checked_at": "2026-11-15T01:31:14Z",
+            "checked_at": "2026-11-15T04:41:37Z",
             "detail": "HTTP 404"
           }
         }
@@ -1805,7 +1805,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:14Z",
+            "checked_at": "2026-11-15T04:41:37Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -1816,7 +1816,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:14Z",
+            "checked_at": "2026-11-15T04:41:38Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1846,7 +1846,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:24Z",
+            "checked_at": "2026-11-15T04:41:48Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1856,7 +1856,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:35Z",
+            "checked_at": "2026-11-15T04:40:57Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1898,7 +1898,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:14Z",
+            "checked_at": "2026-11-15T04:41:38Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -1909,7 +1909,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:15Z",
+            "checked_at": "2026-11-15T04:41:38Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1933,7 +1933,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:35Z",
+            "checked_at": "2026-11-15T04:40:57Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1962,7 +1962,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:24Z",
+            "checked_at": "2026-11-15T04:41:46Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -1998,7 +1998,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:16Z",
+            "checked_at": "2026-11-15T04:41:39Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -2022,7 +2022,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:52Z",
+            "checked_at": "2026-11-15T04:41:14Z",
             "detail": "10s audio dinyahkod (aac (LC) 48000Hz)",
             "codec": "aac (LC) 48000Hz"
           }
@@ -2057,7 +2057,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:17Z",
+            "checked_at": "2026-11-15T04:41:40Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -2068,7 +2068,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:16Z",
+            "checked_at": "2026-11-15T04:41:39Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -2099,7 +2099,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:17Z",
+            "checked_at": "2026-11-15T04:41:41Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -2110,7 +2110,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:17Z",
+            "checked_at": "2026-11-15T04:41:42Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -2140,7 +2140,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:18Z",
+            "checked_at": "2026-11-15T04:41:42Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -2170,7 +2170,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:18Z",
+            "checked_at": "2026-11-15T04:41:42Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -2181,7 +2181,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:20Z",
+            "checked_at": "2026-11-15T04:41:42Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -2216,7 +2216,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:20Z",
+            "checked_at": "2026-11-15T04:41:43Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -2227,7 +2227,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:20Z",
+            "checked_at": "2026-11-15T04:41:44Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -2256,15 +2256,14 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "verified",
-            "checked_at": "2026-11-15T01:31:21Z",
-            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
-            "codec": "mp3 (mp3float) 44100Hz"
+            "status": "failed",
+            "checked_at": "2026-11-15T04:41:45Z",
+            "detail": "HTTP 404"
           }
         }
       ],
-      "stream_type": "direct",
-      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
+      "stream_type": "web_player",
+      "status_note": "Tiada strim terus yang disahkan; buka pemain web rasmi."
     },
     {
       "id": "astro-sinar",
@@ -2288,7 +2287,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:33Z",
+            "checked_at": "2026-11-15T04:41:56Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -2298,7 +2297,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:43Z",
+            "checked_at": "2026-11-15T04:41:06Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -2326,7 +2325,7 @@
           "bitrate": 192,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:24Z",
+            "checked_at": "2026-11-15T04:41:46Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -2361,7 +2360,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:21Z",
+            "checked_at": "2026-11-15T04:41:45Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -2390,10 +2389,9 @@
           "format": "aac",
           "bitrate": 64,
           "verification": {
-            "status": "verified",
-            "checked_at": "2026-11-15T01:31:21Z",
-            "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
-            "codec": "aac (LC) 44100Hz"
+            "status": "failed",
+            "checked_at": "2026-11-15T04:41:45Z",
+            "detail": "HTTP 404"
           }
         },
         {
@@ -2401,15 +2399,14 @@
           "format": "mp3",
           "bitrate": 96,
           "verification": {
-            "status": "verified",
-            "checked_at": "2026-11-15T01:31:21Z",
-            "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
-            "codec": "mp3 (mp3float) 44100Hz"
+            "status": "failed",
+            "checked_at": "2026-11-15T04:41:45Z",
+            "detail": "HTTP 404"
           }
         }
       ],
-      "stream_type": "direct",
-      "status_note": "Strim disahkan oleh ujian CI (audio berjaya dinyahkod)."
+      "stream_type": "web_player",
+      "status_note": "Tiada strim terus yang disahkan; buka pemain web rasmi."
     },
     {
       "id": "rtm-traxx-fm",
@@ -2439,7 +2436,7 @@
           "bitrate": 64,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:23Z",
+            "checked_at": "2026-11-15T04:41:46Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -2450,7 +2447,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:21Z",
+            "checked_at": "2026-11-15T04:41:46Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -2480,7 +2477,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:24Z",
+            "checked_at": "2026-11-15T04:41:46Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -2510,7 +2507,7 @@
           "bitrate": 96,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:24Z",
+            "checked_at": "2026-11-15T04:41:46Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -2535,7 +2532,7 @@
           "bitrate": 320,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:35Z",
+            "checked_at": "2026-11-15T04:40:57Z",
             "detail": "10s audio dinyahkod (mp3 (mp3float) 44100Hz)",
             "codec": "mp3 (mp3float) 44100Hz"
           }
@@ -2564,7 +2561,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:31:28Z",
+            "checked_at": "2026-11-15T04:41:50Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }
@@ -2574,7 +2571,7 @@
           "format": "aac",
           "verification": {
             "status": "verified",
-            "checked_at": "2026-11-15T01:30:40Z",
+            "checked_at": "2026-11-15T04:41:01Z",
             "detail": "10s audio dinyahkod (aac (LC) 44100Hz)",
             "codec": "aac (LC) 44100Hz"
           }

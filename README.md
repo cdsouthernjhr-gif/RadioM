@@ -201,4 +201,83 @@ flutter test integration_test/playback_test.dart -d <device-id>
 
 ## Laporan akhir
 
-_Dikemas kini selepas CI — lihat bahagian ini di bawah._
+Keputusan daripada GitHub Actions (larian `android-build-and-test` #43677788447 pada commit `312e139`,
+dan `verify-streams` #43677788430). Semua nombor di bawah diambil daripada log CI, bukan anggaran.
+
+### Toolchain & binaan
+
+| Perkara | Keputusan |
+|---|---|
+| Flutter SDK / Dart | 3.24.5 (stable) / 3.5.4 |
+| minSdkVersion / targetSdk / compileSdk | **23** / 34 / 34 — disahkan dengan `aapt2` pada setiap APK (`minSdk=23 OK`) |
+| `flutter analyze` | Tiada isu |
+| `flutter test` | **57/57 lulus** |
+| `flutter build apk --release` | Berjaya |
+| APK universal (armeabi-v7a + arm64-v8a + x86_64) | 51,477,965 bait (~51.5 MB) |
+| APK armeabi-v7a (ARM32) | 16,073,132 bait (~16.1 MB) |
+| APK arm64-v8a (ARM64) | 18,647,247 bait (~18.6 MB) |
+| APK x86_64 | 19,766,106 bait (~19.8 MB) |
+| Lokasi APK | Artifact Actions **`apk-release`** (tab Actions → larian terkini → Artifacts) |
+| Tandatangan | Kunci *debug* kecuali `android/key.properties` disediakan (lihat [Membina](#membina)) |
+
+Versi kebergantungan: lihat jadual [Kebergantungan](#kebergantungan-dipin-dalam-pubspecyaml-transitif-dikunci-dalam-pubspeclock).
+
+### Ujian pada Android 6.0 (API 23)
+
+> **Penting:** diuji pada **emulator** Android 6.0 (API 23, `google_apis`, x86_64) dalam CI —
+> **bukan peranti fizikal**. Ujian pada telefon / TV box Android 6.0 sebenar (ARM) masih perlu dibuat
+> sebelum dakwaan keserasian penuh. APK ARM32/ARM64 dibina dan diperiksa, tetapi tidak dijalankan
+> pada perkakasan ARM.
+
+| Ujian | Keputusan | Bukti |
+|---|---|---|
+| Pemasangan APK release | ✅ LULUS | `INSTALL=PASS` |
+| Pelancaran (aktiviti di hadapan, tiada crash) | ✅ LULUS | `LAUNCH_FOREGROUND=PASS`, `LAUNCH_CRASH=NO` |
+| Pangkalan data dimuat | ✅ LULUS | 65 stesen dimuat (DB terbundel v2 dalam APK yang diuji) |
+| MP3 (Nasional FM, HTTPS StreamTheWorld) | ✅ LULUS | `playing`, stabil 10 s |
+| AAC (TraXX FM, HTTPS StreamTheWorld) | ✅ LULUS | `playing`, stabil |
+| AAC HTTPS (HITZ, revma CDN) | ✅ LULUS | `playing`, stabil |
+| HLS HTTPS (MY, revma CDN) | ✅ LULUS | `playing`, stabil |
+| HLS HTTP / AAC HTTP (fallback revma) | ✅ LULUS | `playing`, stabil |
+| HTTP Icecast cleartext (KCFM) | ✅ LULUS | `playing`, stabil |
+| Fallback strim penuh stesen (HITZ) | ✅ LULUS | `playing` |
+| Logo HTTPS (trust store Android 6) | ✅ LULUS | 5/5 dimuat |
+| Background playback (HOME ditekan oleh skrip hos) | ✅ LULUS | `wentBackground=true lifecycle=paused`, audio kekal `playing` 20 s |
+| Rangkaian terputus → sambung semula | ✅ LULUS | ping selepas OFF: 100% hilang; status `offline` → `playing` secara automatik |
+| Jumlah ujian integrasi | **12/12 lulus** | `All tests passed!` |
+| Navigasi alat kawalan jauh TV (D-pad) | ✅ LULUS (ujian widget hos) | `test/widget/tv_navigation_test.dart` — bukan pada peranti TV sebenar |
+
+### Stesen & strim
+
+| Perkara | Jumlah |
+|---|---|
+| Stesen dalam pangkalan data (v3) | **65** |
+| Stesen `direct` (sekurang-kurangnya satu strim disahkan) | **61** |
+| Stesen `web_player` (tiada strim disahkan → buka pemain rasmi) | **4** |
+| URL strim keseluruhan | 117 |
+| URL disahkan (ffmpeg nyahkod ≥ 6 s audio sebenar) | **112** |
+| URL gagal | **5** |
+| URL belum diuji | 0 |
+
+URL yang gagal dan sebabnya (pemeriksaan CI 2026-11-15):
+
+| Stesen | URL | Sebab |
+|---|---|---|
+| Minnal FM | `…/livestream-redirect/MINNAL_FM.mp3` | HTTP 404 (StreamTheWorld) |
+| Perak FM | `…/livestream-redirect/PERAK_FM.mp3` | HTTP 404 |
+| Sibu FM | `…/livestream-redirect/SIBU_FM.mp3` | HTTP 404 → stesen kini `web_player` |
+| Terengganu FM | `…/livestream-redirect/TERENGGANU_FM.mp3` | HTTP 404 |
+| Terengganu FM | `…/livestream-redirect/TERENGGANU_FMAAC_SC` | HTTP 404 → stesen kini `web_player` |
+
+Minnal FM dan Perak FM masih `direct` kerana strim AAC mereka disahkan. ERA dan GEGAR ialah
+`web_player` kerana tiada strim langsung rasmi yang disahkan.
+
+### Had yang diketahui
+
+* Diuji pada emulator API 23, bukan peranti fizikal Android 6.0 / TV box ARM.
+* Pengesahan strim dibuat dari pelayan CI di luar Malaysia; strim yang disekat geografi mungkin
+  berkelakuan berbeza di Malaysia (dan sebaliknya).
+* URL pangkalan data jauh menunjuk ke cawangan `main`; sehingga cawangan ini digabungkan, aplikasi
+  menggunakan DB terbundel (fallback berfungsi seperti direka).
+* Status strim berubah dari masa ke masa — `verify-streams` dijalankan setiap minggu dan
+  mengemas kini `stream_type` secara automatik.
